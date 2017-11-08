@@ -3,8 +3,11 @@
 from __future__ import unicode_literals
 
 AUTHOR = u'HP Chang'
+SITEURL = 'http://localhost:8000'
+SITETITLE = AUTHOR
+SITESUBTITLE = 'Software Engineer'
 SITENAME = u'HPC@TechBar'
-SITEURL = ''
+SITEDESCRIPTION = '%s\'s Thoughts and Writings' % AUTHOR
 
 PATH = 'content'
 
@@ -19,17 +22,23 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
+FAVICON = '/res/Martin-Berube-Animal-Penguin.ico'
 # Blogroll
-LINKS = (('Pelican', 'http://getpelican.com/'),
-         ('Python.org', 'http://python.org/'),
-         ('Jinja2', 'http://jinja.pocoo.org/'),
-         ('You can modify those links in your config file', '#'),)
+#LINKS = (('Pelican', 'http://getpelican.com/'),)
 
 # Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
+SOCIAL = (('linkedin', 'https://www.linkedin.com/in/hpchang'),
+          ('github', 'https://github.com/hpchang'))
+CC_LICENSE = {
+    'name': 'Creative Commons Attribution-ShareAlike',
+    'version': '4.0',
+    'slug': 'by-sa'
+}
+
 
 DEFAULT_PAGINATION = 10
+
+THEME = './pelican-themes/Flex'
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
