@@ -1,0 +1,6 @@
+[submodule "pelican-themes/resume"]
+	path = pelican-themes/resume
+	url = https://github.com/suheb/resume.git
+[submodule "pelican-themes/resume_hp"]
+	path = pelican-themes/resume_hp
+	url = git@github.com:hpchang/resume.git

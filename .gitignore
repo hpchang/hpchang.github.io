@@ -1,0 +1,9 @@
+cache/
+percolation/
+output/
+pelican-plugins/
+*.pid
+*.pyc
+pelican-themes/
+.ipynb_checkpoints/
+__pycache__/
