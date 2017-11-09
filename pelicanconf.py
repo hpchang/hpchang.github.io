@@ -23,6 +23,7 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 FAVICON = '/res/Martin-Berube-Animal-Penguin.ico'
+SITELOGO = '/res/hp_profile.png'
 # Blogroll
 #LINKS = (('Pelican', 'http://getpelican.com/'),)
 
@@ -40,5 +41,6 @@ DEFAULT_PAGINATION = 10
 
 THEME = './pelican-themes/Flex'
 
+STATIC_PATHS = ['res']
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
