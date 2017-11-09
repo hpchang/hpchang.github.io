@@ -22,7 +22,7 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
-FAVICON = '/res/Martin-Berube-Animal-Penguin.ico'
+FAVICON = '/res/Penguin.ico'
 SITELOGO = '/res/hp_profile.png'
 # Blogroll
 #LINKS = (('Pelican', 'http://getpelican.com/'),)
