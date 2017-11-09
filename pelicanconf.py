@@ -5,9 +5,9 @@ from __future__ import unicode_literals
 AUTHOR = u'HP Chang'
 SITEURL = 'http://localhost:8000'
 SITETITLE = AUTHOR
-SITESUBTITLE = 'Software Engineer'
+SITESUBTITLE = 'Solution-Maker'
 SITENAME = u'HPC@TechBar'
-SITEDESCRIPTION = '%s\'s Thoughts and Writings' % AUTHOR
+SITEDESCRIPTION = '%s\'s TechBar' % AUTHOR
 
 PATH = 'content'
 
@@ -29,7 +29,8 @@ SITELOGO = '/res/hp_profile.png'
 
 # Social widget
 SOCIAL = (('linkedin', 'https://www.linkedin.com/in/hpchang'),
-          ('github', 'https://github.com/hpchang'))
+          ('github', 'https://github.com/hpchang'),
+          ('envelope-o', 'mailto:hpchang.tw@gmail.com'))
 CC_LICENSE = {
     'name': 'Creative Commons Attribution-ShareAlike',
     'version': '4.0',
