@@ -30,7 +30,14 @@ SITELOGO = '/res/hp_profile.png'
 # Social widget
 SOCIAL = (('linkedin', 'https://www.linkedin.com/in/hpchang'),
           ('github', 'https://github.com/hpchang'),
+
           ('envelope-o', 'mailto:hpchang.tw@gmail.com'))
+MAIN_MENU = True
+MENUITEMS = (('Archives', '/archives.html'),
+             ('Categories', '/categories.html'),
+             ('Tags', '/tags.html'),
+#             ('Blog', '/blogging-with-jupyter-and-pelican.html')
+)
 CC_LICENSE = {
     'name': 'Creative Commons Attribution-ShareAlike',
     'version': '4.0',
@@ -38,6 +45,7 @@ CC_LICENSE = {
 }
 
 
+PYGMENTS_STYLE = 'default'
 DEFAULT_PAGINATION = 10
 
 THEME = './pelican-themes/Flex'
@@ -45,3 +53,7 @@ THEME = './pelican-themes/Flex'
 STATIC_PATHS = ['res']
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
+MARKUP = ('md', 'ipynb')
+PLUGIN_PATHS = ['./pelican-plugins']
+PLUGINS = ['ipynb.markup']
+
