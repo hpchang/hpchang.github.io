@@ -5,7 +5,7 @@ from __future__ import unicode_literals
 AUTHOR = u'HP Chang'
 SITEURL = 'http://localhost:8000'
 SITETITLE = AUTHOR
-SITESUBTITLE = 'Solution-Maker'
+SITESUBTITLE = 'HPC@TechBar'
 SITENAME = u'HPC@TechBar'
 SITEDESCRIPTION = '%s\'s TechBar' % AUTHOR
 
@@ -33,6 +33,7 @@ SOCIAL = (('linkedin', 'https://www.linkedin.com/in/hpchang'),
 
           ('envelope-o', 'mailto:hpchang.tw@gmail.com'))
 MAIN_MENU = True
+HOME_HIDE_TAGS = True
 MENUITEMS = (('Archives', '/archives.html'),
              ('Categories', '/categories.html'),
              ('Tags', '/tags.html'),
@@ -55,5 +56,9 @@ STATIC_PATHS = ['res']
 #RELATIVE_URLS = True
 MARKUP = ('md', 'ipynb')
 PLUGIN_PATHS = ['./pelican-plugins']
+IGNORE_FILES = ['.ipynb_checkpoints']
 PLUGINS = ['ipynb.markup']
+JINJA_ENVIRONMENT = {
+    'extensions': ['webassets.ext.jinja2.AssetsExtension', 'jinja2.ext.with_'],
+}
 
