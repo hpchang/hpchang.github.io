@@ -62,3 +62,5 @@ JINJA_ENVIRONMENT = {
     'extensions': ['webassets.ext.jinja2.AssetsExtension', 'jinja2.ext.with_'],
 }
 
+STATIC_PATHS = ['res', 'code', 'extra/CNAME']
+EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'},}
