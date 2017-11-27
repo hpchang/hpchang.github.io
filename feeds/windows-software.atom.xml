@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>HPC@TechBar</title><link href="https://www.hpchang.com/" rel="alternate"></link><link href="https://www.hpchang.com/feeds/windows-software.atom.xml" rel="self"></link><id>https://www.hpchang.com/</id><updated>2017-11-21T00:00:00+08:00</updated><entry><title>Construction on Windows 10</title><link href="https://www.hpchang.com/rebuild-on-windows-10.html" rel="alternate"></link><published>2017-11-21T00:00:00+08:00</published><updated>2017-11-21T00:00:00+08:00</updated><author><name>HP Chang</name></author><id>tag:www.hpchang.com,2017-09-06:rebuild-on-windows-10.html</id><summary type="html">&lt;p&gt;Backup is important when your laptop &lt;strong&gt;won't wake up&lt;/strong&gt;. Furthermore, HD decryption takes a long time and not guarantee to recover totally. That's why I have the chance to write this construction note : p
+<feed xmlns="http://www.w3.org/2005/Atom"><title>HPC@TechBar</title><link href="/" rel="alternate"></link><link href="/feeds/windows-software.atom.xml" rel="self"></link><id>/</id><updated>2017-11-21T00:00:00+08:00</updated><entry><title>Construction on Windows 10</title><link href="/rebuild-on-windows-10.html" rel="alternate"></link><published>2017-11-21T00:00:00+08:00</published><updated>2017-11-21T00:00:00+08:00</updated><author><name>HP Chang</name></author><id>tag:,2017-09-06:rebuild-on-windows-10.html</id><summary type="html">&lt;p&gt;Backup is important when your laptop &lt;strong&gt;won't wake up&lt;/strong&gt;. Furthermore, HD decryption takes a long time and not guarantee to recover totally. That's why I have the chance to write this construction note : p
 Here is my step to install FW tool on &lt;strong&gt;Win 10&lt;/strong&gt;!&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://www.hpchang.com/res/Windows-10-Windows-7-gaming-versus-640x339.jpg" alt="Windos 10" style="width: 320px;"/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="/res/Windows-10-Windows-7-gaming-versus-640x339.jpg" alt="Windos 10" style="width: 320px;"/&gt;&lt;/p&gt;
 &lt;hr /&gt;
 &lt;h2&gt;Installation&lt;/h2&gt;
 &lt;h4&gt;&lt;i class="icon-file"&gt;&lt;/i&gt; Backup data&lt;/h4&gt;
@@ -45,4 +45,4 @@ Here is my step to install FW tool on &lt;strong&gt;Win 10&lt;/strong&gt;!&lt;/p
 &lt;li&gt;&lt;a href="https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys--2"&gt;How to set up ssh key&lt;/a&gt; &lt;/li&gt;
 &lt;li&gt;&lt;a href="https://wiki.archlinux.org/index.php/SSH_keys"&gt;Managing multiple keys&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src="https://www.hpchang.com/res/1000px-Public_key_encryption.svg.png" alt="ssh key" style="width: 320px;"/&gt;&lt;/p&gt;</summary><category term="windows10"></category><category term="windows"></category></entry></feed>
+&lt;p&gt;&lt;img src="/res/1000px-Public_key_encryption.svg.png" alt="ssh key" style="width: 320px;"/&gt;&lt;/p&gt;</summary><category term="windows10"></category><category term="windows"></category></entry></feed>
