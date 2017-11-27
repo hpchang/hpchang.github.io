@@ -30,7 +30,7 @@ SITELOGO = '/res/hp_profile.png'
 # Social widget
 SOCIAL = (('linkedin', 'https://www.linkedin.com/in/hpchang'),
           ('github', 'https://github.com/hpchang'),
-
+          ('twitter', 'https://twitter.com/hpc_techbar'),
           ('envelope-o', 'mailto:hpchang.tw@gmail.com'))
 MAIN_MENU = True
 HOME_HIDE_TAGS = True
