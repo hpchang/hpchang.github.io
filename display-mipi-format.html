@@ -1,0 +1,199 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" type="text/css" href="/theme/stylesheet/style.min.css">
+
+  <link rel="stylesheet" type="text/css" href="/theme/pygments/default.min.css">
+  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/font-awesome.min.css">
+
+
+    <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="HPC@TechBar Atom">
+
+
+    <link rel="shortcut icon" href="/res/Penguin.ico" type="image/x-icon">
+    <link rel="icon" href="/res/Penguin.ico" type="image/x-icon">
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="" />
+
+
+<meta name="author" content="HP Chang" />
+<meta name="description" content="Introduction to Display Serial Interface MIPI" />
+<meta name="keywords" content="display, display interface, mipi">
+<meta property="og:site_name" content="HPC@TechBar"/>
+<meta property="og:title" content="Display Serial Interface (DSI) by MIPI"/>
+<meta property="og:description" content="Introduction to Display Serial Interface MIPI"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:url" content="/display-mipi-format.html"/>
+<meta property="og:type" content="article"/>
+<meta property="article:published_time" content="2017-10-12 00:00:00+08:00"/>
+<meta property="article:modified_time" content="2017-11-27 00:00:00+08:00"/>
+<meta property="article:author" content="/author/hp-chang.html">
+<meta property="article:section" content="display"/>
+<meta property="article:tag" content="display"/>
+<meta property="article:tag" content="display interface"/>
+<meta property="article:tag" content="mipi"/>
+<meta property="og:image" content="/res/hp_profile.png">
+
+  <title>HPC@TechBar &ndash; Display Serial Interface (DSI) by MIPI</title>
+
+</head>
+<body>
+  <aside>
+    <div>
+      <a href="">
+        <img src="/res/hp_profile.png" alt="HP Chang" title="HP Chang">
+      </a>
+      <h1><a href="">HP Chang</a></h1>
+
+<p>HPC@TechBar</p>
+
+      <ul class="social">
+        <li><a class="sc-linkedin" href="https://www.linkedin.com/in/hpchang" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+        <li><a class="sc-github" href="https://github.com/hpchang" target="_blank"><i class="fa fa-github"></i></a></li>
+        <li><a class="sc-twitter" href="https://twitter.com/hpc_techbar" target="_blank"><i class="fa fa-twitter"></i></a></li>
+        <li><a class="sc-envelope-o" href="mailto:hpchang.tw@gmail.com" target="_blank"><i class="fa fa-envelope-o"></i></a></li>
+      </ul>
+    </div>
+
+
+  </aside>
+  <main>
+
+    <nav>
+      <a href="">    Home
+</a>
+
+      <a href="/archives.html">Archives</a>
+      <a href="/categories.html">Categories</a>
+      <a href="/tags.html">Tags</a>
+
+      <a href="/feeds/all.atom.xml">    Atom
+</a>
+
+    </nav>
+
+<article class="single">
+  <header>
+    <h1 id="display-mipi-format">Display Serial Interface (DSI) by MIPI</h1>
+    <p>
+          Posted on Thu 12 October 2017 in <a href="/category/display.html">display</a>
+
+
+    </p>
+  </header>
+
+
+  <div>
+    <p>One of the biggest change in mobile technology is higher display resolustion with faster interface. I would like to describe how image content transfer from digital binary to pixel’s crystal. This article is motivated by many discussions with Chun-Hsi, Bowen and Scott.</p>
+<p><img src="/res/tablet-313002_1280.jpg" alt="Figure tablet display" title="Tablet display by Mocho on pixabay" style="width: 640px;" /></p>
+<p><em>Image source via Mocho by <a href="https://pixabay.com/en/tablet-screen-monitor-phone-pc-313002/">pixabay</a></em></p>
+<h2>Overview of Display System</h2>
+<p>Let's look inside of a thin-film transistor(TFT) LCD <sup id="fnref:LCD"><a class="footnote-ref" href="#fn:LCD" rel="footnote">1</a></sup> panel:</p>
+<ul>
+<li>TFTs are subjected to varying voltages to change orientation of molecules in the liquid crystal suspension. This adjust the amount of light allowed to pass through, thereby changing the colour picture.</li>
+<li>Each unit pixel has a TFT, a pixel electrode (IT0), and a storage capacitor (Cs). </li>
+<li>Each is individually addressable from the pads at the ends of the rows and columns connecting through the matrix.</li>
+</ul>
+<p>The job of display driving IC is to receive digital data from host and control associated timing and voltage of each pixel on matrix TFT panel. Above is all about physical control. Let's look at how we achieve so fast digital transmission from frame data. </p>
+<p><img alt="enter image description here" src="https://lh3.googleusercontent.com/a6LGieR1SQvd279gX7koknqjzUKxsDzpnYJJ7Ss1wJGxuJjVenXLqI2Ul03U75EwiEMFc1DkxsJDeg=s600" /></p>
+<p><em>Image source via MIPI introduction by Ryan</em></p>
+<p><a href="https://www.synopsys.com/designware-ip/technical-bulletin/implementing-mipi-camera.html">The mobile market, specifically smartphones, has been growing immensely in the past 10 years while MIPI CSI-2 and DSI have been the interfaces of choice to enable multiple cameras and some displays in mobile devices...Both interfaces utilize the same physical layer – MIPI D-PHY – to transmit data to the application processor or SoC.</a></p>
+<p>Taking the Qualcomm S805(image<sup id="fnref:S805_syna_image"><a class="footnote-ref" href="#fn:S805_syna_image" rel="footnote">2</a></sup>, table#1<sup id="fnref:S805_table_1"><a class="footnote-ref" href="#fn:S805_table_1" rel="footnote">3</a></sup>) as example. Due to 1440x2560x32bppx60fps picture bandwidth, it uses two <strong>DSI</strong> ports(D-PHY 1.01, 1.0Gbps/lane) with 4 lanes each to drive the display in halves of 720×2560 pixels as below figure.</p>
+<h2>DSI Video mode</h2>
+<p>Video mode refers to transactions taking the form of a real-time pixel stream. The host provides video data, that is, pixel values, and synchronization information, that is, Vsync, Hsync, data enable, and the pixel clock.</p>
+<p><img alt="enter image description here" src="https://lh3.googleusercontent.com/LoBKDYQEDrzuT67NSFFhF5Q27XzYol7pbmovHW6RCNCeRTtfn9KTLYuQ9bu9LWx2_cRsgVVFQcHIFw" /></p>
+<p><em>Image source via Qualcomm DSI Programming Guide LM80-P0598-2</em> </p>
+<p>Let’s see the timing details associated in transmitting the video frame by RGB888 video format in 640×480 display<sup id="fnref:RGB888"><a class="footnote-ref" href="#fn:RGB888" rel="footnote">4</a></sup></p>
+<p>Then, we transfer above 2D timing info to serial DSI packet(VSS,HSS,RGB) on one video frame. As packet pixel stream(0x3E) inside a frame, packet is described with "data type", "word count", "24bpp" and "CRC. Those bytes of packet data are alignment with 4 DSI Data lines configuration(MIPI D-PHY).  </p>
+<p><img alt="enter image description here" src="https://lh3.googleusercontent.com/AaNkGJmC2wDEoqNQD0P70EJNDwTyzee9b0FHtGjpAf7rUOubLSz_q_VbyZWmyEJSqQylXHpTIK-jvQ=s1280" /></p>
+<p><em>Image source via datasheet of TI SN65DSI84 and STM AN4860</em></p>
+<h2>DSI Command mode</h2>
+<p>Besides video mode of DSI, <strong>command mode</strong> of DSI is used to send DCS command(0x5) to control display behavior i.e. sleep in/out. There are short and long packet to support command mode and the format is described as follows.</p>
+<ul>
+<li>Short packet issues DCS sleep in command i.e. 0x05 0x10</li>
+<li>Long packet issues DCS long write(0x39) 
+<img alt="enter image description here" src="https://lh3.googleusercontent.com/a46M1QLJ6HaE3gNjXH_whL_JcrzRnIMunGmrC0me5eXlwoTcbrw4Y6eQE04qXcYHlXVdfiCZnPmamQ=s1200" /></li>
+</ul>
+<p><em>Image source via datasheet of ILITEK ILI9806E</em></p>
+<h2>Touch Disaply Driver Integration(TDDI)</h2>
+<p>We recognize the format from host to device. Now let's look it further to TDDI case.
+Switching of the crystals in the LCD for display update functions lead to noises on the touch sensing. 
+Synaptics' TDsync <sup id="fnref:TDsync"><a class="footnote-ref" href="#fn:TDsync" rel="footnote">5</a></sup> technology synchronizes their active period, thus avoiding display noise. </p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:LCD">
+<p>"liquid crystal display: active-matrix TFT liquid crystal display". Illustration. <a href="https://www.britannica.com/technology/liquid-crystal-display?oasmId=60170">Encyclopædia Britannica Online. Web. 27 Nov. 2017</a>&#160;<a class="footnote-backref" href="#fnref:LCD" rev="footnote" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:S805_syna_image">
+<p><a href="http://www.turnhardware.net/?p=10088">R63319 display driver support 1440x2560</a>&#160;<a class="footnote-backref" href="#fnref:S805_syna_image" rev="footnote" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:S805_table_1">
+<p>Table 1: Typical display resolutions supported in mobile devices using MIPI DSI and D-PHY from <a href="https://lh3.googleusercontent.com/oQUU9Bm65VA53Q9O5WEmFQtS4kbLlEptwRAoU9r9ex_iGoMY_PaHHA8SL9cIo4ZU9RfEQnj7L0ePxQ=s1000">"Choose the Right Storage, Display Interfaces for Low-Power Mobile SoCs" by Hezi Saar</a>&#160;<a class="footnote-backref" href="#fnref:S805_table_1" rev="footnote" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+<li id="fn:RGB888">
+<p><a href="https://blogs.synopsys.com/vip-central/2015/02/10/video-frame-transmission-in-mipi-dsi/">In RGB888 data format, each pixel has 3 bytes (24bits) of information, 1byte (8bits) for each component (R and G and B).  In 640×480 resolution frame, each line has 640 pixels and frame has 480 lines. Let’s see the timing information which needs to be sent along with this RGB data. Every video frame should have below information (in the order of sequence)</a> i.e. VSYNC (Sync information), VBP (Vertical back porch timing information), VACT (Active video data along with horizontal back porch and front porch timing), VFP (Vertical front porch timing information)&#160;<a class="footnote-backref" href="#fnref:RGB888" rev="footnote" title="Jump back to footnote 4 in the text">&#8617;</a></p>
+</li>
+<li id="fn:TDsync">
+<p><a href="http://www.synaptics.com/sites/default/files/tdsync-eliminates-smartphone-tablet-display-noise.pdf">The superior touch performance enabled by TDsync technology is available with Synaptics In-Cell
+touchscreen controller implementations. Focused engineering investments and strategic acquisitions have
+made Synaptics the industry leader in display integration.</a> &#160;<a class="footnote-backref" href="#fnref:TDsync" rev="footnote" title="Jump back to footnote 5 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+  </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="/tag/display.html">display</a>
+      <a href="/tag/display-interface.html">display interface</a>
+      <a href="/tag/mipi.html">mipi</a>
+    </p>
+  </div>
+
+
+
+
+</article>
+
+    <footer>
+<p>
+  &copy; HP Chang  - This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>
+</p>
+<p>    Powered by <a href="http://getpelican.com" target="_blank">Pelican</a> - <a href="https://github.com/alexandrevicenzi/flex" target="_blank">Flex</a> theme by <a href="http://alexandrevicenzi.com" target="_blank">Alexandre Vicenzi</a>
+</p><p>
+  <a rel="license"
+     href="http://creativecommons.org/licenses/by-sa/4.0/"
+     target="_blank">
+    <img alt="Creative Commons License"
+         title="Creative Commons License"
+         style="border-width:0"
+         src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png"
+         width="80"
+         height="15"/>
+  </a>
+</p>    </footer>
+  </main>
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " HPC@TechBar ",
+  "url" : "",
+  "image": "/res/hp_profile.png",
+  "description": "HP Chang's TechBar"
+}
+</script>
+</body>
+</html>

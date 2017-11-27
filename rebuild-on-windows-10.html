@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" type="text/css" href="/theme/stylesheet/style.min.css">
+
+  <link rel="stylesheet" type="text/css" href="/theme/pygments/default.min.css">
+  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/font-awesome.min.css">
+
+
+    <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="HPC@TechBar Atom">
+
+
+    <link rel="shortcut icon" href="/res/Penguin.ico" type="image/x-icon">
+    <link rel="icon" href="/res/Penguin.ico" type="image/x-icon">
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="" />
+
+
+<meta name="author" content="HP Chang" />
+<meta name="description" content="Note for install Bash, tools on Windows 10" />
+<meta name="keywords" content="windows10, windows">
+<meta property="og:site_name" content="HPC@TechBar"/>
+<meta property="og:title" content="Construction on Windows 10"/>
+<meta property="og:description" content="Note for install Bash, tools on Windows 10"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:url" content="/rebuild-on-windows-10.html"/>
+<meta property="og:type" content="article"/>
+<meta property="article:published_time" content="2017-09-06 00:00:00+08:00"/>
+<meta property="article:modified_time" content="2017-11-21 00:00:00+08:00"/>
+<meta property="article:author" content="/author/hp-chang.html">
+<meta property="article:section" content="windows software"/>
+<meta property="article:tag" content="windows10"/>
+<meta property="article:tag" content="windows"/>
+<meta property="og:image" content="/res/hp_profile.png">
+
+  <title>HPC@TechBar &ndash; Construction on Windows 10</title>
+
+</head>
+<body>
+  <aside>
+    <div>
+      <a href="">
+        <img src="/res/hp_profile.png" alt="HP Chang" title="HP Chang">
+      </a>
+      <h1><a href="">HP Chang</a></h1>
+
+<p>HPC@TechBar</p>
+
+      <ul class="social">
+        <li><a class="sc-linkedin" href="https://www.linkedin.com/in/hpchang" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+        <li><a class="sc-github" href="https://github.com/hpchang" target="_blank"><i class="fa fa-github"></i></a></li>
+        <li><a class="sc-twitter" href="https://twitter.com/hpc_techbar" target="_blank"><i class="fa fa-twitter"></i></a></li>
+        <li><a class="sc-envelope-o" href="mailto:hpchang.tw@gmail.com" target="_blank"><i class="fa fa-envelope-o"></i></a></li>
+      </ul>
+    </div>
+
+
+  </aside>
+  <main>
+
+    <nav>
+      <a href="">    Home
+</a>
+
+      <a href="/archives.html">Archives</a>
+      <a href="/categories.html">Categories</a>
+      <a href="/tags.html">Tags</a>
+
+      <a href="/feeds/all.atom.xml">    Atom
+</a>
+
+    </nav>
+
+<article class="single">
+  <header>
+    <h1 id="rebuild-on-windows-10">Construction on Windows 10</h1>
+    <p>
+          Posted on Wed 06 September 2017 in <a href="/category/windows-software.html">windows software</a>
+
+
+    </p>
+  </header>
+
+
+  <div>
+    <p>Backup is important when your laptop <strong>won't wake up</strong>. Furthermore, HD decryption takes a long time and not guarantee to recover totally. That's why I have the chance to write this construction note : p
+Here is my step to install FW tool on <strong>Win 10</strong>!</p>
+<p><img src="/res/Windows-10-Windows-7-gaming-versus-640x339.jpg" alt="Windos 10" style="width: 320px;"/></p>
+<hr />
+<h2>Installation</h2>
+<h4><i class="icon-file"></i> Backup data</h4>
+<ul>
+<li>robocopy \$SRC \$DST /mir /R:0 /W:0 /FFT /A-:SH</li>
+</ul>
+<h4><i class="icon-file"></i> Required software</h4>
+<ul>
+<li>APP: Dynamic theme</li>
+<li>Exceed onDemand Client</li>
+<li>Evernote</li>
+<li>Notepad++</li>
+<li><a href="https://www.howtogeek.com/249966/how-to-install-and-use-the-linux-bash-shell-on-windows-10/">Bash on Ubuntu(WSL)</a>, <a href="http://www.developerinsider.in/compile-c-program-with-gcc-compiler-on-bash-on-ubuntu-on-windows-10/" title="compiler gcc">gcc compiler</a>, <a href="https://askubuntu.com/questions/462690/what-does-apt-get-fix-missing-do-and-when-is-it-useful/462751" title="apt-get --fix-missing">Issue: apt-get --fix-missing</a><ul>
+<li><a href="https://askubuntu.com/questions/759880/where-is-the-ubuntu-file-system-root-directory-in-windows-nt-subsystem-and-vice">Ubuntu file system root</a></li>
+<li>gcc, python, python3, perl, rsync</li>
+<li><a href="https://stackoverflow.com/questions/20615217/bash-bad-substitution">bash: Bad Substitution</a>, <a href="https://superuser.com/questions/1098526/windows-10-linux-subsystem-ssh-client-resource-temporarily-unavailable">ssh: Resource temporarily unavailable</a>, <a href="https://stackoverflow.com/questions/20054538/add-a-bash-script-to-path">usr local bin</a></li>
+<li>apt-get install bc, libspreadsheet-parseexcel-perl</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p><i class="icon-attention"></i>Check out <a href="https://support.symantec.com/en_US/article.TECH236946.html"><i class="icon-block"></i> Firewall blocks updates to the Windows 10 Linux sub-system feature</a> when you see the error <em>ssh: connect to host tiger.synaptics.com port 22: Resource temporarily unavailable</em>. There is one workaround to disable firewall via <strong><code>$MYPROGRAMFILE/Symantec Endpoint Protection/Smc.exe -disable -ntp</code></strong></p>
+</blockquote>
+<ul>
+<li>Windows Git</li>
+<li>Beyond compare</li>
+<li>Visual studio 2013/2012</li>
+<li>Matlab 2016/2015</li>
+<li>VS code</li>
+<li>Git extension</li>
+<li>P4merge</li>
+<li>Docker</li>
+<li>Git Extension</li>
+<li>TortoiseGit</li>
+<li>ZEROPLUS</li>
+<li>DediProg</li>
+</ul>
+<h4><i class="icon-file"></i> Set up ssh key</h4>
+<ul>
+<li>If you have one, just copy it from your old .ssh</li>
+<li><a href="https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys--2">How to set up ssh key</a> </li>
+<li><a href="https://wiki.archlinux.org/index.php/SSH_keys">Managing multiple keys</a></li>
+</ul>
+<p><img src="/res/1000px-Public_key_encryption.svg.png" alt="ssh key" style="width: 320px;"/></p>
+  </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="/tag/windows10.html">windows10</a>
+      <a href="/tag/windows.html">windows</a>
+    </p>
+  </div>
+
+
+
+
+</article>
+
+    <footer>
+<p>
+  &copy; HP Chang  - This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>
+</p>
+<p>    Powered by <a href="http://getpelican.com" target="_blank">Pelican</a> - <a href="https://github.com/alexandrevicenzi/flex" target="_blank">Flex</a> theme by <a href="http://alexandrevicenzi.com" target="_blank">Alexandre Vicenzi</a>
+</p><p>
+  <a rel="license"
+     href="http://creativecommons.org/licenses/by-sa/4.0/"
+     target="_blank">
+    <img alt="Creative Commons License"
+         title="Creative Commons License"
+         style="border-width:0"
+         src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png"
+         width="80"
+         height="15"/>
+  </a>
+</p>    </footer>
+  </main>
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " HPC@TechBar ",
+  "url" : "",
+  "image": "/res/hp_profile.png",
+  "description": "HP Chang's TechBar"
+}
+</script>
+</body>
+</html>
