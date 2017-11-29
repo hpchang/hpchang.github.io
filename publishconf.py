@@ -10,6 +10,7 @@ import sys
 sys.path.append(os.curdir)
 from pelicanconf import *
 
+DISQUS_SITENAME = "hpchang"
 SITEURL = 'http://www.hpchang.com'
 RELATIVE_URLS = False
 
