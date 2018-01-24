@@ -31,7 +31,8 @@ SITELOGO = '/res/hp_profile.png'
 SOCIAL = (('linkedin', 'https://www.linkedin.com/in/hpchang'),
           ('github', 'https://github.com/hpchang'),
           ('twitter', 'https://twitter.com/hpc_techbar'),
-          ('envelope-o', 'mailto:hpchang.tw@gmail.com'))
+          ('google', 'http://blog.hpchang.com'),
+          ('envelope-o', 'mailto:contact@hpchang.com'))
 MAIN_MENU = True
 HOME_HIDE_TAGS = True
 MENUITEMS = (('Archives', '/archives.html'),
