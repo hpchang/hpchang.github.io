@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = u'HP Chang'
 SITENAME = u'HP Chang'
-SITEURL = ''
+SITEURL = 'http://localhost:8000'
 
 PATH = 'content'
 
@@ -156,3 +156,5 @@ THEME = "./pelican-themes/resume_hp"
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
+STATIC_PATHS = ['extra/CNAME']
+EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'},}
