@@ -1,51 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>HPC@TechBar</title><link href="http://www.hpchang.com/" rel="alternate"></link><link href="http://www.hpchang.com/feeds/all.atom.xml" rel="self"></link><id>http://www.hpchang.com/</id><updated>2017-11-21T00:00:00+08:00</updated><entry><title>Construction on Windows 10</title><link href="http://www.hpchang.com/rebuild-on-windows-10.html" rel="alternate"></link><published>2017-11-21T00:00:00+08:00</published><updated>2017-11-21T00:00:00+08:00</updated><author><name>HP Chang</name></author><id>tag:www.hpchang.com,2017-09-06:rebuild-on-windows-10.html</id><summary type="html">&lt;p&gt;Backup is important when your laptop &lt;strong&gt;won't wake up&lt;/strong&gt;. Furthermore, HD decryption takes a long time and not guarantee to recover totally. That's why I have the chance to write this construction note : p
-Here is my step to install FW tool on &lt;strong&gt;Win 10&lt;/strong&gt;!&lt;/p&gt;
-&lt;p&gt;&lt;img src="http://www.hpchang.com/res/Windows-10-Windows-7-gaming-versus-640x339.jpg" alt="Windos 10" style="width: 320px;"/&gt;&lt;/p&gt;
-&lt;hr /&gt;
-&lt;h2&gt;Installation&lt;/h2&gt;
-&lt;h4&gt;&lt;i class="icon-file"&gt;&lt;/i&gt; Backup data&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;robocopy \$SRC \$DST /mir /R:0 /W:0 /FFT /A-:SH&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4&gt;&lt;i class="icon-file"&gt;&lt;/i&gt; Required software&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;APP: Dynamic theme&lt;/li&gt;
-&lt;li&gt;Exceed onDemand Client&lt;/li&gt;
-&lt;li&gt;Evernote&lt;/li&gt;
-&lt;li&gt;Notepad++&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.howtogeek.com/249966/how-to-install-and-use-the-linux-bash-shell-on-windows-10/"&gt;Bash on Ubuntu(WSL)&lt;/a&gt;, &lt;a href="http://www.developerinsider.in/compile-c-program-with-gcc-compiler-on-bash-on-ubuntu-on-windows-10/" title="compiler gcc"&gt;gcc compiler&lt;/a&gt;, &lt;a href="https://askubuntu.com/questions/462690/what-does-apt-get-fix-missing-do-and-when-is-it-useful/462751" title="apt-get --fix-missing"&gt;Issue: apt-get --fix-missing&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://askubuntu.com/questions/759880/where-is-the-ubuntu-file-system-root-directory-in-windows-nt-subsystem-and-vice"&gt;Ubuntu file system root&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;gcc, python, python3, perl, rsync&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://stackoverflow.com/questions/20615217/bash-bad-substitution"&gt;bash: Bad Substitution&lt;/a&gt;, &lt;a href="https://superuser.com/questions/1098526/windows-10-linux-subsystem-ssh-client-resource-temporarily-unavailable"&gt;ssh: Resource temporarily unavailable&lt;/a&gt;, &lt;a href="https://stackoverflow.com/questions/20054538/add-a-bash-script-to-path"&gt;usr local bin&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;apt-get install bc, libspreadsheet-parseexcel-perl&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;i class="icon-attention"&gt;&lt;/i&gt;Check out &lt;a href="https://support.symantec.com/en_US/article.TECH236946.html"&gt;&lt;i class="icon-block"&gt;&lt;/i&gt; Firewall blocks updates to the Windows 10 Linux sub-system feature&lt;/a&gt; when you see the error &lt;em&gt;ssh: connect to host tiger.synaptics.com port 22: Resource temporarily unavailable&lt;/em&gt;. There is one workaround to disable firewall via &lt;strong&gt;&lt;code&gt;$MYPROGRAMFILE/Symantec Endpoint Protection/Smc.exe -disable -ntp&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;Windows Git&lt;/li&gt;
-&lt;li&gt;Beyond compare&lt;/li&gt;
-&lt;li&gt;Visual studio 2013/2012&lt;/li&gt;
-&lt;li&gt;Matlab 2016/2015&lt;/li&gt;
-&lt;li&gt;VS code&lt;/li&gt;
-&lt;li&gt;Git extension&lt;/li&gt;
-&lt;li&gt;P4merge&lt;/li&gt;
-&lt;li&gt;Docker&lt;/li&gt;
-&lt;li&gt;Git Extension&lt;/li&gt;
-&lt;li&gt;TortoiseGit&lt;/li&gt;
-&lt;li&gt;ZEROPLUS&lt;/li&gt;
-&lt;li&gt;DediProg&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4&gt;&lt;i class="icon-file"&gt;&lt;/i&gt; Set up ssh key&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;If you have one, just copy it from your old .ssh&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys--2"&gt;How to set up ssh key&lt;/a&gt; &lt;/li&gt;
-&lt;li&gt;&lt;a href="https://wiki.archlinux.org/index.php/SSH_keys"&gt;Managing multiple keys&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src="http://www.hpchang.com/res/1000px-Public_key_encryption.svg.png" alt="ssh key" style="width: 320px;"/&gt;&lt;/p&gt;</summary><category term="windows10"></category><category term="windows"></category></entry><entry><title>First Post</title><link href="http://www.hpchang.com/first-post.html" rel="alternate"></link><published>2016-06-08T20:00:00+08:00</published><updated>2016-06-08T20:00:00+08:00</updated><author><name>me</name></author><id>tag:www.hpchang.com,2016-06-08:first-post.html</id><summary type="html">&lt;style type="text/css"&gt;/*!
+<feed xmlns="http://www.w3.org/2005/Atom"><title>HPC@TechBar</title><link href="http://www.hpchang.com/" rel="alternate"></link><link href="http://www.hpchang.com/feeds/posts.atom.xml" rel="self"></link><id>http://www.hpchang.com/</id><updated>2016-06-08T20:00:00+08:00</updated><entry><title>First Post</title><link href="http://www.hpchang.com/first-post.html" rel="alternate"></link><published>2016-06-08T20:00:00+08:00</published><updated>2016-06-08T20:00:00+08:00</updated><author><name>me</name></author><id>tag:www.hpchang.com,2016-06-08:first-post.html</id><summary type="html">&lt;style type="text/css"&gt;/*!
 *
 * IPython notebook
 *

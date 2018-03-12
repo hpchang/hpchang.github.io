@@ -1,51 +1,45 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>HPC@TechBar</title><link href="http://www.hpchang.com/" rel="alternate"></link><link href="http://www.hpchang.com/feeds/all.atom.xml" rel="self"></link><id>http://www.hpchang.com/</id><updated>2017-11-21T00:00:00+08:00</updated><entry><title>Construction on Windows 10</title><link href="http://www.hpchang.com/rebuild-on-windows-10.html" rel="alternate"></link><published>2017-11-21T00:00:00+08:00</published><updated>2017-11-21T00:00:00+08:00</updated><author><name>HP Chang</name></author><id>tag:www.hpchang.com,2017-09-06:rebuild-on-windows-10.html</id><summary type="html">&lt;p&gt;Backup is important when your laptop &lt;strong&gt;won't wake up&lt;/strong&gt;. Furthermore, HD decryption takes a long time and not guarantee to recover totally. That's why I have the chance to write this construction note : p
-Here is my step to install FW tool on &lt;strong&gt;Win 10&lt;/strong&gt;!&lt;/p&gt;
-&lt;p&gt;&lt;img src="http://www.hpchang.com/res/Windows-10-Windows-7-gaming-versus-640x339.jpg" alt="Windos 10" style="width: 320px;"/&gt;&lt;/p&gt;
-&lt;hr /&gt;
-&lt;h2&gt;Installation&lt;/h2&gt;
-&lt;h4&gt;&lt;i class="icon-file"&gt;&lt;/i&gt; Backup data&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;robocopy \$SRC \$DST /mir /R:0 /W:0 /FFT /A-:SH&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4&gt;&lt;i class="icon-file"&gt;&lt;/i&gt; Required software&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;APP: Dynamic theme&lt;/li&gt;
-&lt;li&gt;Exceed onDemand Client&lt;/li&gt;
-&lt;li&gt;Evernote&lt;/li&gt;
-&lt;li&gt;Notepad++&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.howtogeek.com/249966/how-to-install-and-use-the-linux-bash-shell-on-windows-10/"&gt;Bash on Ubuntu(WSL)&lt;/a&gt;, &lt;a href="http://www.developerinsider.in/compile-c-program-with-gcc-compiler-on-bash-on-ubuntu-on-windows-10/" title="compiler gcc"&gt;gcc compiler&lt;/a&gt;, &lt;a href="https://askubuntu.com/questions/462690/what-does-apt-get-fix-missing-do-and-when-is-it-useful/462751" title="apt-get --fix-missing"&gt;Issue: apt-get --fix-missing&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://askubuntu.com/questions/759880/where-is-the-ubuntu-file-system-root-directory-in-windows-nt-subsystem-and-vice"&gt;Ubuntu file system root&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;gcc, python, python3, perl, rsync&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://stackoverflow.com/questions/20615217/bash-bad-substitution"&gt;bash: Bad Substitution&lt;/a&gt;, &lt;a href="https://superuser.com/questions/1098526/windows-10-linux-subsystem-ssh-client-resource-temporarily-unavailable"&gt;ssh: Resource temporarily unavailable&lt;/a&gt;, &lt;a href="https://stackoverflow.com/questions/20054538/add-a-bash-script-to-path"&gt;usr local bin&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;apt-get install bc, libspreadsheet-parseexcel-perl&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;i class="icon-attention"&gt;&lt;/i&gt;Check out &lt;a href="https://support.symantec.com/en_US/article.TECH236946.html"&gt;&lt;i class="icon-block"&gt;&lt;/i&gt; Firewall blocks updates to the Windows 10 Linux sub-system feature&lt;/a&gt; when you see the error &lt;em&gt;ssh: connect to host tiger.synaptics.com port 22: Resource temporarily unavailable&lt;/em&gt;. There is one workaround to disable firewall via &lt;strong&gt;&lt;code&gt;$MYPROGRAMFILE/Symantec Endpoint Protection/Smc.exe -disable -ntp&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;Windows Git&lt;/li&gt;
-&lt;li&gt;Beyond compare&lt;/li&gt;
-&lt;li&gt;Visual studio 2013/2012&lt;/li&gt;
-&lt;li&gt;Matlab 2016/2015&lt;/li&gt;
-&lt;li&gt;VS code&lt;/li&gt;
-&lt;li&gt;Git extension&lt;/li&gt;
-&lt;li&gt;P4merge&lt;/li&gt;
-&lt;li&gt;Docker&lt;/li&gt;
-&lt;li&gt;Git Extension&lt;/li&gt;
-&lt;li&gt;TortoiseGit&lt;/li&gt;
-&lt;li&gt;ZEROPLUS&lt;/li&gt;
-&lt;li&gt;DediProg&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4&gt;&lt;i class="icon-file"&gt;&lt;/i&gt; Set up ssh key&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;If you have one, just copy it from your old .ssh&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys--2"&gt;How to set up ssh key&lt;/a&gt; &lt;/li&gt;
-&lt;li&gt;&lt;a href="https://wiki.archlinux.org/index.php/SSH_keys"&gt;Managing multiple keys&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src="http://www.hpchang.com/res/1000px-Public_key_encryption.svg.png" alt="ssh key" style="width: 320px;"/&gt;&lt;/p&gt;</summary><category term="windows10"></category><category term="windows"></category></entry><entry><title>First Post</title><link href="http://www.hpchang.com/first-post.html" rel="alternate"></link><published>2016-06-08T20:00:00+08:00</published><updated>2016-06-08T20:00:00+08:00</updated><author><name>me</name></author><id>tag:www.hpchang.com,2016-06-08:first-post.html</id><summary type="html">&lt;style type="text/css"&gt;/*!
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <title>HPC@TechBar</title>
+        <meta charset="utf-8" />
+        <link href="http://www.hpchang.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="HPC@TechBar Full Atom Feed" />
+        <link href="http://www.hpchang.com/feeds/posts.atom.xml" type="application/atom+xml" rel="alternate" title="HPC@TechBar Categories Atom Feed" />
+
+
+
+    <meta name="tags" content="tag1" />
+    <meta name="tags" content="tag2" />
+    <meta name="tags" content="tag3" />
+
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="http://www.hpchang.com/">HPC@TechBar <strong>HPC@TechBar</strong></a></h1>
+        </header><!-- /#banner -->
+        <nav id="menu"><ul>
+            <li><a href="/archives.html">Archives</a></li>
+            <li><a href="/categories.html">Categories</a></li>
+            <li><a href="/tags.html">Tags</a></li>
+        </ul></nav><!-- /#menu -->
+<section id="content" class="body">
+  <header>
+    <h2 class="entry-title">
+      <a href="http://www.hpchang.com/first-post.html" rel="bookmark"
+         title="Permalink to First Post">First Post</a></h2>
+ 
+  </header>
+  <footer class="post-info">
+    <abbr class="published" title="2016-06-08T20:00:00+08:00">
+      Wed 08 June 2016
+    </abbr>
+    <address class="vcard author">
+      By           <a class="url fn" href="http://www.hpchang.com/author/me.html">me</a>
+    </address>
+  </footer><!-- /.post-info -->
+  <div class="entry-content">
+    <style type="text/css">/*!
 *
 * IPython notebook
 *
@@ -272,7 +266,7 @@ div.unrecognized_cell .inner_cell a:hover {
   text-decoration: none;
 }
 @media (max-width: 540px) {
-  div.unrecognized_cell &gt; div.prompt {
+  div.unrecognized_cell > div.prompt {
     display: none;
   }
 }
@@ -325,19 +319,19 @@ div.input_prompt {
   color: #303F9F;
   border-top: 1px solid transparent;
 }
-div.input_area &gt; div.highlight {
+div.input_area > div.highlight {
   margin: 0.4em;
   border: none;
   padding: 0px;
   background-color: transparent;
 }
-div.input_area &gt; div.highlight &gt; pre {
+div.input_area > div.highlight > pre {
   margin: 0px;
   border: none;
   padding: 0px;
   background-color: transparent;
 }
-/* The following gets added to the &lt;head&gt; if it is detected that the user has a
+/* The following gets added to the <head> if it is detected that the user has a
  * monospace font with inconsistent normal/bold/italic height.  See
  * notebookmain.js.  Such fonts will have keywords vertically offset with
  * respect to the rest of the text.  The user should select a better font.
@@ -383,7 +377,7 @@ div.input_area &gt; div.highlight &gt; pre {
 }
 /*
 
-Original style from softwaremaniacs.org (c) Ivan Sagalaev &lt;Maniac@SoftwareManiacs.Org&gt;
+Original style from softwaremaniacs.org (c) Ivan Sagalaev <Maniac@SoftwareManiacs.Org>
 Adapted from GitHub theme
 
 */
@@ -845,7 +839,7 @@ div.text_cell {
   align-items: stretch;
 }
 @media (max-width: 540px) {
-  div.text_cell &gt; div.prompt {
+  div.text_cell > div.prompt {
     display: none;
   }
 }
@@ -910,8 +904,8 @@ h6:hover .anchor-link {
   font-size: 100%;
   font-style: italic;
 }
-&lt;/style&gt;
-&lt;style type="text/css"&gt;.highlight .hll { background-color: #ffffcc }
+</style>
+<style type="text/css">.highlight .hll { background-color: #ffffcc }
 .highlight  { background: #f8f8f8; }
 .highlight .c { color: #408080; font-style: italic } /* Comment */
 .highlight .err { border: 1px solid #FF0000 } /* Error */
@@ -979,8 +973,8 @@ h6:hover .anchor-link {
 .highlight .vg { color: #19177C } /* Name.Variable.Global */
 .highlight .vi { color: #19177C } /* Name.Variable.Instance */
 .highlight .vm { color: #19177C } /* Name.Variable.Magic */
-.highlight .il { color: #666666 } /* Literal.Number.Integer.Long */&lt;/style&gt;
-&lt;style type="text/css"&gt;
+.highlight .il { color: #666666 } /* Literal.Number.Integer.Long */</style>
+<style type="text/css">
 /* Temporary definitions which will become obsolete with Notebook release 5.0 */
 .ansi-black-fg { color: #3E424D; }
 .ansi-black-bg { background-color: #3E424D; }
@@ -1016,67 +1010,67 @@ h6:hover .anchor-link {
 .ansi-white-intense-bg { background-color: #A1A6B2; }
 
 .ansi-bold { font-weight: bold; }
-&lt;/style&gt;
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
-&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h1 id="First-post,-Hello-world!"&gt;First post, Hello world!&lt;a class="anchor-link" href="#First-post,-Hello-world!"&gt;¶&lt;/a&gt;&lt;/h1&gt;&lt;p&gt;This will be the first post in our new Pelican blog! You can add any code or markdown cells to this Jupyter notebook, and they will be rendered on your blog.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
-&lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [1]:&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-&lt;div class="input_area"&gt;
-&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;random&lt;/span&gt;
+</style>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="First-post,-Hello-world!">First post, Hello world!<a class="anchor-link" href="#First-post,-Hello-world!">¶</a></h1><p>This will be the first post in our new Pelican blog! You can add any code or markdown cells to this Jupyter notebook, and they will be rendered on your blog.</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In [1]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
 
-&lt;span class="n"&gt;random&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;randint&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;100&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="output_wrapper"&gt;
-&lt;div class="output"&gt;
-&lt;div class="output_area"&gt;
-&lt;div class="prompt output_prompt"&gt;Out[1]:&lt;/div&gt;
-&lt;div class="output_text output_subarea output_execute_result"&gt;
-&lt;pre&gt;63&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
-&lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [2]:&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-&lt;div class="input_area"&gt;
-&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;matplotlib.pyplot&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;plt&lt;/span&gt;
+<span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">100</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area">
+<div class="prompt output_prompt">Out[1]:</div>
+<div class="output_text output_subarea output_execute_result">
+<pre>63</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In [2]:</div>
+<div class="inner_cell">
+<div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 
-&lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="k"&gt;matplotlib&lt;/span&gt; inline
+<span class="o">%</span><span class="k">matplotlib</span> inline
 
-&lt;span class="n"&gt;plt&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;hist&lt;/span&gt;&lt;span class="p"&gt;([&lt;/span&gt;&lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;7&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="output_wrapper"&gt;
-&lt;div class="output"&gt;
-&lt;div class="output_area"&gt;
-&lt;div class="prompt output_prompt"&gt;Out[2]:&lt;/div&gt;
-&lt;div class="output_text output_subarea output_execute_result"&gt;
-&lt;pre&gt;(array([ 2.,  1.,  1.,  0.,  2.,  0.,  1.,  0.,  0.,  2.]),
+<span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">([</span><span class="mi">10</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area">
+<div class="prompt output_prompt">Out[2]:</div>
+<div class="output_text output_subarea output_execute_result">
+<pre>(array([ 2.,  1.,  1.,  0.,  2.,  0.,  1.,  0.,  0.,  2.]),
  array([  1. ,   1.9,   2.8,   3.7,   4.6,   5.5,   6.4,   7.3,   8.2,
           9.1,  10. ]),
- &lt;a list of 10 patch objects&gt;)&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="output_area"&gt;
-&lt;div class="prompt"&gt;&lt;/div&gt;
-&lt;div class="output_png output_subarea "&gt;
-&lt;img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAX4AAAD8CAYAAABw1c+bAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
+ <a list of 10 patch objects>)</pre>
+</div>
+</div>
+<div class="output_area">
+<div class="prompt"></div>
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAX4AAAD8CAYAAABw1c+bAAAABHNCSVQICAgIfAhkiAAAAAlwSFlz
 AAALEgAACxIB0t1+/AAAADl0RVh0U29mdHdhcmUAbWF0cGxvdGxpYiB2ZXJzaW9uIDIuMS4wLCBo
 dHRwOi8vbWF0cGxvdGxpYi5vcmcvpW3flQAAEetJREFUeJzt3X2wXHV9x/H3pwG0PoxGc7U2ySU4
 zaj4ANg7UYtTsQrGhxI7dabJ+BAdnTvjiE912oF2Bjo408Ha0dYWxYymaKtgi1DTGoWMaGmL2FyQ
@@ -1160,22 +1154,22 @@ VdUael/cXV1VTW7VVdW3gLuSPKlregG9M9pb9U3g2Uke1v3dvICGv+zu0//zN5uBTy3Ggxj8w3Uq
 8Gp6W7Y3dreXjLooHTXeDHwsyU3AycCfjriekek++VwG3ADcTC+Lmjp7N8klwBeBJyWZTvJ64ALg
 9CR30PtUdMGiPLZn7kpSW9zil6TGGPyS1BiDX5IaY/BLUmMMfklqjMEvSY0x+CWpMQa/JDXm/wBV
 UyuR7XRS+wAAAABJRU5ErkJggg==
-" /&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
-&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;Done!&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
+" />
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Done!</p>
+</div>
+</div>
+</div>
 
-&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+<script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
     var mathjaxscript = document.createElement('script');
     mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
     mathjaxscript.type = 'text/javascript';
@@ -1202,5 +1196,15 @@ UyuR7XRS+wAAAABJRU5ErkJggg==
         "}); ";
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
-&lt;/script&gt;
-</summary><category term="tag1"></category><category term="tag2"></category><category term="tag3"></category></entry></feed>
+</script>
+
+  </div><!-- /.entry-content -->
+</section>
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>,
+                which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+        </footer><!-- /#contentinfo -->
+</body>
+</html>
