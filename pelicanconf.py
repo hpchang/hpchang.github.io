@@ -26,6 +26,7 @@ WEBSITE = 'blog.hpchang.com'
 LINKEDIN = 'hpchang'
 GITHUB = 'hpchang'
 TWITTER = '@hpc_techbar'
+FACEBOOK = 'hp.chang.71'
 
 CAREER_SUMMARY = '8+ years of industrial experience in firmware development and its mobile applications of human interface. Constructed 1st touch and display driver integration (TDDI) solution and prototyped smallest optical image stabilization (O.I.S) camera for smartphone. Proven track record of superior on-site ODM support over 30% of the DSC market, shipping into almost every camera brand.'
 
