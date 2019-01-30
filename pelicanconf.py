@@ -26,9 +26,9 @@ WEBSITE = 'blog.hpchang.com'
 LINKEDIN = 'hpchang'
 GITHUB = 'hpchang'
 TWITTER = '@hpc_techbar'
-FACEBOOK = 'hp.chang.71'
+FACEBOOK = 'hpchangconsole'
 
-CAREER_SUMMARY = '8+ years of industrial experience in firmware development and its mobile applications of human interface. Constructed 1st touch and display driver integration (TDDI) solution and prototyped smallest optical image stabilization (O.I.S) camera for smartphone. Proven track record of superior on-site ODM support over 30% of the DSC market, shipping into almost every camera brand.'
+CAREER_SUMMARY = 'Over a decade\'s experience in firmware development and its mobile applications of human interface. Constructed 1st touch and display driver integration (TDDI) solution and prototyped smallest optical image stabilization (O.I.S) camera for smartphone. Proven track record of superior on-site ODM support over 30% of the DSC market, shipping into almost every camera brand.'
 
 SKILLS = [
 	{
@@ -97,8 +97,15 @@ INTERESTS = [
 
 EXPERIENCES = [
 	{
+		'job_title': 'Vice President <sub>for industrial AI inspection solutions</sub>',
+		'time': 'Jul 2018 - Present',
+                'company': '開必拓數據 Kapito Inc, Taiwan',
+		'details': "Provided fast and stable AI inspection solution<br>" 
+	},
+        {
+
 		'job_title': 'Sr. Firmware Engineer <sub>for Touch&Display driver integration(TDDI)</sub>',
-		'time': 'May 2014 - Present',
+		'time': 'May 2014 - Jun 2018',
 		'company': 'Synaptics, Taiwan',
 		'details': "Worked on developing TDDI from 0 to 100Mu shipments in 3yrs with exceptional cross-geography teamwork<br>" 
 		           "&minus; Led 1st TDDI XL display ASIC to MP with A0 silicon for 9 customers.<br>" 
