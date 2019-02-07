@@ -15,7 +15,7 @@ DEFAULT_LANG = u'en'
 CSS_FILE = 'main-6.css'
 #Profile information
 NAME = 'HP Chang 張惠普'
-TAGLINE = 'Embedded Engineer'
+TAGLINE = 'Happy hacking!'
 PIC = 'hp_profile.png'
 FAVICON = '/theme/images/favicon.jpg'
 
@@ -80,7 +80,7 @@ PROJECTS = [
 
 LANGUAGES = [
 	{
-		'name': 'Chinese',
+		'name': 'Mandarin',
 		'description': 'Native'
 	},
 	{
