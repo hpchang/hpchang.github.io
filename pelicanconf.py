@@ -20,9 +20,10 @@ PIC = 'hp_profile.png'
 FAVICON = '/theme/images/favicon.jpg'
 
 #sidebar links
-EMAIL = 'hp.chang@hpchang.com'
+EMAIL = 'contact@hpchang.com'
 #PHONE = 'N/C'
 WEBSITE = 'blog.hpchang.com'
+INSTAGRAM='taiwan.go'
 LINKEDIN = 'hpchang'
 GITHUB = 'hpchang'
 TWITTER = '@hpc_techbar'
