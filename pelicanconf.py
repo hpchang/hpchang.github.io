@@ -98,7 +98,7 @@ INTERESTS = [
 
 EXPERIENCES = [
 	{
-		'job_title': 'Vice President <sub>for industrial AI inspection solutions</sub>',
+		'job_title': 'Team Lead <sub>for industrial AI inspection solutions</sub>',
 		'time': 'Jul 2018 - Present',
                 'company': '開必拓數據 Kapito Inc, Taiwan',
 		'details': "Provided fast and stable AI inspection solution<br>" 
