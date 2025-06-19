@@ -10,11 +10,11 @@ sidebar:
   # Profile information
   name: HP
   tagline: Innovator
-  avatar: profile.png #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
+  avatar: hp_profile.png #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
   # Sidebar links
   email: hp@hpchang.com
-  phone: 012 345 6789
+  phone:
   timezone: Taiwan # Enter your timezone, e.g., America/Havana, Africa/Casablanca, America/North_Dakota/Center
   citizenship:
   website: https://www.hpchang.com/ # Include the full website URL, including "http://" or "https://".
@@ -37,45 +37,43 @@ sidebar:
   languages:
     title: Languages
     info:
-    - idiom: English
+    - idiom: Mandarin
       level: Native
 
-    - idiom: French
+    - idiom: English
       level: Professional
 
-    - idiom: Spanish
-      level: Professional
+    - idiom:
+      level:
 
   interests:
     title: Interests
     info:
-    - item: Climbing
+    - item: Running
       link:
 
 
-    - item: Snowboarding
+    - item:
       link:
 
 
-    - item: Cooking
+    - item:
       link:
 
 
 career-profile:
   title: Career Profile
   summary: |
-    Summarise your career here lorem ipsum dolor sit amet, consectetuer
-    adipiscing elit. You can [download this free resume/CV template here]().
-    Aenean commodo ligula eget dolor aenean massa. Cum sociis natoque
-    penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-    Donec quam felis, ultricies nec, pellentesque eu.
-    Second paragraph if required.
+    Over a decade's experience in firmware development and its mobile applications of human interface. 
+    Constructed 1st touch and display driver integration (TDDI) solution and prototyped smallest optical 
+    image stabilization (O.I.S) camera for smartphone. Proven track record of superior on-site ODM support 
+    over 30% of the DSC market, shipping into almost every camera brand.
 education:
   title: Education
   info:
-  - degree: MSc in Computer Science
-    university: University of London
-    time: 2011 - 2012
+  - degree: MSc in Opto-Mechatronics Engineering
+    university: National Central University
+    time: 2005 - 2007
     details: |
       Describe your study here lorem ipsum dolor sit amet, consectetuer
       adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
@@ -84,9 +82,9 @@ education:
       pretium quis, sem.
         - Bullet point
         - Bullet point
-  - degree: BSc in Applied Mathematics
-    university: Bristol University
-    time: 2007 - 2011
+  - degree: BSc in Mechanical Engineering
+    university: National Central University
+    time: 2001 - 205
     details: |
       Describe your study here lorem ipsum dolor sit amet, consectetuer
       adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
