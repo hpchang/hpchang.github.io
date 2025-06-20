@@ -4,7 +4,7 @@
 
 sidebar:
   position: right # position of the sidebar : left or right
-  about: True # set to False or comment line if you want to remove the "how to use?" in the sidebar
+  about: False # set to False or comment line if you want to remove the "how to use?" in the sidebar
   education: True # set to False if you want education in main section instead of in sidebar
 
   # Profile information
@@ -14,271 +14,147 @@ sidebar:
 
   # Sidebar links
   email: hp@hpchang.com
-  phone:
-  timezone: Taiwan # Enter your timezone, e.g., America/Havana, Africa/Casablanca, America/North_Dakota/Center
-  citizenship:
-  website: https://www.hpchang.com/ # Include the full website URL, including "http://" or "https://".
-  linkedin: alandoe
-  xing: alandoe
-  github: jekyll
-  telegram: # add your nickname without '@' sign
-  gitlab:
-  bitbucket:
-  bluesky: '@jekyllrb.bsky.social' # Specify your full Bluesky handle
-  twitter: '@jekyllrb'
-  stack-overflow: # Number/Username, e.g. 123456/alandoe
-  codewars:
-  goodreads: # Number-Username, e.g. 123456-alandoe
-  mastodon: # Please include your full Mastodon link here.
-  hackerrank: # Please provide your HackerRank username.
-  leetcode: # Please provide your LeetCode username.
-  pdf: # Add a PDF link here if you want to include a PDF custom version in your resume.
-
+  phone: null
+  timezone: null  # Enter your timezone, e.g., America/Havana, Africa/Casablanca, America/North_Dakota/Center
+  citizenship: null
+  website: https://www.hpchang.com/  # Include the full website URL, including "http://" or "https://".
+  linkedin: hpchang
+  xing: null
+  github: hpchang
+  telegram: null
+  gitlab: null
+  bitbucket: null
+  bluesky: null
+  twitter: hpchang
+  stack-overflow: null
+  codewars: null
+  goodreads: hpchang
+  mastodon: null
+  hackerrank: null
+  leetcode: null
+  pdf: null
   languages:
     title: Languages
     info:
     - idiom: Mandarin
       level: Native
-
     - idiom: English
       level: Professional
-
-    - idiom:
-      level:
-
+    - idiom: null
+      level: null
   interests:
     title: Interests
     info:
     - item: Running
-      link:
-
-
-    - item:
-      link:
-
-
-    - item:
-      link:
-
-
+      link: null
+    - item: null
+      link: null
+    - item: null
+      link: null
 career-profile:
   title: Career Profile
-  summary: |
-    Over a decade's experience in firmware development and its mobile applications of human interface. 
-    Constructed 1st touch and display driver integration (TDDI) solution and prototyped smallest optical 
-    image stabilization (O.I.S) camera for smartphone. Proven track record of superior on-site ODM support 
-    over 30% of the DSC market, shipping into almost every camera brand.
+  summary: "Over a decade's experience in firmware development and its mobile applications\
+    \ of human interface. \nConstructed 1st touch and display driver integration (TDDI)\
+    \ solution and prototyped smallest optical \nimage stabilization (O.I.S) camera\
+    \ for smartphone. Proven track record of superior on-site ODM support \nover 30%\
+    \ of the DSC market, shipping into almost every camera brand.\n"
 education:
   title: Education
   info:
   - degree: MSc in Opto-Mechatronics Engineering
     university: National Central University
     time: 2005 - 2007
-    details: |
-      Describe your study here lorem ipsum dolor sit amet, consectetuer
-      adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
-      sociis natoque penatibus et magnis dis parturient montes, nascetur
-      ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
-      pretium quis, sem.
-        - Bullet point
-        - Bullet point
+    details: "Describe your study here lorem ipsum dolor sit amet, consectetuer\n\
+      adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum\nsociis\
+      \ natoque penatibus et magnis dis parturient montes, nascetur\nridiculus mus.\
+      \ Donec quam felis, ultricies nec, pellentesque eu,\npretium quis, sem.\n  -\
+      \ Bullet point\n  - Bullet point\n"
   - degree: BSc in Mechanical Engineering
     university: National Central University
     time: 2001 - 2005
-    details: |
-      Describe your study here lorem ipsum dolor sit amet, consectetuer
-      adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
-      sociis natoque penatibus et magnis dis parturient montes, nascetur
-      ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
-      pretium quis, sem.
-        - Bullet point
-        - Bullet point
-
+    details: "Describe your study here lorem ipsum dolor sit amet, consectetuer\n\
+      adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum\nsociis\
+      \ natoque penatibus et magnis dis parturient montes, nascetur\nridiculus mus.\
+      \ Donec quam felis, ultricies nec, pellentesque eu,\npretium quis, sem.\n  -\
+      \ Bullet point\n  - Bullet point\n"
 experiences:
   title: Experiences
   info:
-  - role: Lead Developer
-    time: 2015 - Present
-    company: Startup Hubs, San Francisco
-    details: |
-      Describe your role here lorem ipsum dolor sit amet, consectetuer
-      adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-      Cum sociis natoque penatibus et magnis dis parturient montes,
-      nascetur ridiculus mus. Donec quam felis, ultricies nec,
-      pellentesque eu, pretium quis, sem. Nulla consequat massa quis
-      enim. Donec pede justo. Sed ut perspiciatis unde omnis iste natus
-      error sit voluptatem accusantium doloremque laudantium, totam rem
-      aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-      architecto beatae vitae dicta sunt explicabo.
-        - Bullet point
-        - Bullet point
-  - role: Senior Software Engineer
-    time: 2014 - 2015
-    company: Google, London
-    details: |
-      Describe your role here lorem ipsum dolor sit amet, consectetuer
-      adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-      Cum sociis natoque penatibus et magnis dis parturient montes,
-      nascetur ridiculus mus. Donec quam felis, ultricies nec,
-      pellentesque eu, pretium quis, sem.
-        - Bullet point
-        - Bullet point
-  - role: UI Developer
-    time: 2012 - 2014
-    company: Amazon, London
-    details: |
-      Describe your role here lorem ipsum dolor sit amet, consectetuer
-      adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-      Cum sociis natoque penatibus et magnis dis parturient montes,
-      nascetur ridiculus mus. Donec quam felis, ultricies nec,
-      pellentesque eu, pretium quis, sem.
-        - Bullet point
-        - Bullet point
-
+  - role: Director of Industrial Solutions
+    time: Jul 2018 - Present
+    company: 開必拓數據 Kapito Inc, Taiwan
+    details: Provided fast and stable AI inspection solution<br>
+  - role: Sr. Firmware Engineer for Touch&Display driver integration(TDDI)
+    time: May 2014 - Jun 2018
+    company: Synaptics, Taiwan
+    details: Worked on developing TDDI from 0 to 100Mu shipments in 3yrs with exceptional
+    cross-geography teamwork<br>&minus; Led 1st TDDI XL display ASIC to MP with A0
+    silicon for 9 customers.<br>&minus; Led 1st TDDI Gen2 ASIC to MP, 3 months ahead
+    of original target.<br>&minus; Constructed TDDI Gen1 for world's first TDDI single-chip
+    solution.<br>&minus; Implemented an auto-notify FW build validation of continuous
+    integration(CI). Focused on cloud-based automated regression testing
+  - role: Firmware Engineer <sub>for digital still camera soc</sub>
+    time: Nov 2010 - Mar 2014
+    company: CSR Plc. (via acquisition of Zoran Corporation), Taiwan
+    details: Led and supported in 10+ ODM projects from design-in to massproduction,
+    accounting for millions of shipped cameras. And brought up SOCs drivers (CMOS
+    sensor, LCD, Audio Codec...) connecting through common interface (LVDS, I2C, SPI,
+    UART...) and debugging and developing features in image signal processing pipeline&software
+    flow.<br>
+  - role: Control System Leader <sub>for mobile phoen camera actuator</sub>
+    time: Feb 2009 - Nov 2010
+    company: TDK Corporation, Taiwan
+    details: In one year, built the smallest 2-axes anti-shake O.I.S system for mobile
+    phone camera in collaboration with Japanese engineering colleagues, and implemented
+    camera module system with H.264 video recording in WinCE platform.
 certifications:
   title: Certifications
   list:
-  - name: CV Builder
-    start: 2020
-    end: 2021
-    organization: Microsoft
-    credentialid: 111-222
-    credentialurl: www.google.com
-    credentialname: Google
+  - name: Synaptics Awards 2017
+    start: 2017
+    end: 2018
+    organization: Synaptics
+    credentialid: null
+    credentialurl: https://www.synaptics.com/
+    credentialname: Synaptics
     details: |
-      Details about cert. Lorem ipsum dolor sit amet, consectetur
-      adipiscing elit.
-      Nullam eget orci purus. Nullam ultrices neque nibh.
-      Aenean fermentum, felis vulputate suscipit accumsan,
-      sem enim bibendum augue, sed convallis arcu lacus at dui.
-      Pellentesque et nibh suscipit, vestibulum turpis eu, semper tortor.
-      Praesent felis nibh, eleifend id eleifend id, dictum id enim.
-      Praesent venenatis erat non augue suscipit consectetur.
+      "Exhilarating and Rewarding Environment" for achievement for initial release to MP of tire-one OEM with A0 silicon.
 
-      Second paragraph. Sed eleifend enim ante, vitae efficitur purus
-      fringilla vel. Ut euismod, sem sed vulputate venenatis,
-      justo diam viverra velit, sed rhoncus leo leo eu justo.
-      Suspendisse placerat risus ante, sed porta nisi blandit at.
-  - name: Git learning
-    start: 2019
-    end:
-    organization: Microsoft
-    credentialid: 111-222
-    credentialurl: www.github.com
-    credentialname: Github
+  - name: Synaptics Awards 2016
+    start: 2016
+    end: 2017
+    organization: Synaptics
+    credentialid: null
+    credentialurl: https://www.synaptics.com/
+    credentialname: Synaptics
     details: |
-      Older certification. Lorem ipsum dolor sit amet, consectetur
-      adipiscing elit.
-      Nullam eget orci purus. Nullam ultrices neque nibh.
-      Aenean fermentum, felis vulputate suscipit accumsan,
-      sem enim bibendum augue, sed convallis arcu lacus at dui.
-      Pellentesque et nibh suscipit, vestibulum turpis eu, semper tortor.
-      Praesent felis nibh, eleifend id eleifend id, dictum id enim.
-      Praesent venenatis erat non augue suscipit consectetur.
-
-projects:
-  title: Projects
-  intro: >
-    You can list your side projects in this section. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ligula in nunc bibendum fringilla a eu lectus.
-  assignments:
-  - title: Velocity
-    link: "#hook"
-    tagline: "A responsive website template designed to help startups promote, market and sell their products."
-
-  - title: DevStudio
-    link: "#"
-    tagline: "A responsive website template designed to help web developers/designers market their services."
-
-  - title: Tempo
-    link: "#"
-    tagline: "A responsive website template designed to help startups promote their products or services and to attract users &amp; investors"
-
-  - title: Atom
-    link: "#"
-    tagline: "A comprehensive website template solution for startups/developers to market their mobile apps."
-
-  - title: Delta
-    link: "#"
-    tagline: "A responsive Bootstrap one page theme designed to help app developers promote their mobile apps"
-
-oss:
-  title: OSS Contributions
-  intro: >
-    You can list your open source software contributions in this section. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ligula in nunc bibendum fringilla a eu lectus.
-  contributions:
-  - title: Tempo
-    link: "#"
-    tagline: "A responsive website template designed to help startups promote their products or services and to attract users &amp; investors"
-
-  - title: Atom
-    link: "#"
-    tagline: "A comprehensive website template solution for startups/developers to market their mobile apps."
-
-  - title: Delta
-    link: "#"
-    tagline: "A responsive Bootstrap one page theme designed to help app developers promote their mobile apps"
+      "Innovation to Win" for overcoming a tremendous deal of challenges throughout silicon development w/ new fabrication.
 
 publications:
   title: Publications
-  intro: |
-    You can list your publications in this section. Lorem ipsum dolor sit
-    amet, consectetur adipiscing elit. Vestibulum et ligula in nunc
-    bibendum fringilla a eu lectus.
+  intro: null
   papers:
-  - title: The Art of Computer Programming
-    link: "#"
-    authors: Donald E. Knuth
-    conference: Addison-Wesley, 1968
-
-  - title: "Genetic Programming III: Darwinian Invention &amp; Problem Solving"
-    link: "#"
-    authors: Koza, J.R., Andre, D., Bennett, F.H., Keane, M.A.
-    conference: "Morgan Kaufmann Publishers Inc., San Francisco, CA, USA, 1st edn. (1999)"
-
-  - title: A syntax directed compiler for Algol 60
-    link: "#"
-    authors: Edgar T. Irons
-    conference: "Comm. ACM 4 (1961), 51–55"
-
-recommendations:
-  title: Recommendations
-  list:
-  - person: Yareli Perez
-    email: perezyareli@example.com
-    phone: 012 345 6789
-    role: General Director at example.com
-    recommendation: |
-      Alan Doe is a super employee!
-  - person: Lara Henderson
-    email: larah@example.com
-    phone: 012 345 6789
-    role: General Director at example.com
-    recommendation: |
-      I would like to work with Alan Doe again!
-
-      He is a great employee!
-
+  - title: 'Digital programmable load measurement device'
+    link: 'https://www.google.com/patents/US20130054155'
+    authors: Shyh-Biau Jiang, HP CHANG
+    conference: 2011
+  - title: 'A new on-line battery
+    state-of-charge estimation and monitoring system'
+    link: 'https://hdl.handle.net/11296/qu699m'
+    authors: HP CHANG
+    conference: 2007
 skills:
-  title: Skills &amp; Proficiency
-
-  toolset:
-  - name: Python & Django
-    level: 98%
-
-  - name: Javascript & jQuery
-    level: 98%
-
-  - name: Angular
-    level: 98%
-
-  - name: HTML5 & CSS
-    level: 95%
-
-  - name: Ruby on Rails
-    level: 85%
-
-  - name: Sketch & Photoshop
-    level: 60%
-
-footer: >
-  Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
+- title: Embedded RTOS
+  level: '90'
+- title: C/C++, python, Matlab
+  level: '95'
+- title: Touch screen algorithm
+  level: '95'
+- title: Peripheral driver, HW/AFE
+  level: '90'
+- title: GNU gcc, make
+  level: '85'
+- title: Chip bring up & Automated CI regression
+  level: '85'
+footer: 'Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com"
+  target="_blank" rel="nofollow">Xiaoying Riley</a>
