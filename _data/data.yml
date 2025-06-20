@@ -137,17 +137,26 @@ publications:
     authors: HP CHANG
     conference: 2007
 skills:
-- title: Embedded RTOS
-  level: 98%
-- title: C/C++, python, Matlab
-  level: 95%
-- title: Touch screen algorithm
-  level: 95%
-- title: Peripheral driver, HW/AFE
-  level: 90%
-- title: GNU gcc, make
-  level: 85%
-- title: Chip bring up & Automated CI regression
-  level: 85%
+  title: Skills &amp; Proficiency
+
+  toolset:
+  - name: Embedded RTOS
+    level: 98%
+
+  - name: C/C++, python, Matlab
+    level: 95%
+
+  - name: Touch screen algorithm
+    level: 95%
+
+  - name: Peripheral driver, HW/AFE
+    level: 90%
+
+  - name: GNU gcc, make
+    level: 85%
+
+  - name: Chip bring up & Automated CI regression
+    level: 85%
+    
 footer: 'Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com"
   target="_blank" rel="nofollow">Xiaoying Riley</a>
