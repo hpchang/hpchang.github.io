@@ -8,7 +8,7 @@ sidebar:
   education: True # set to False if you want education in main section instead of in sidebar
 
   # Profile information
-  name: HP
+  name: HP Chang 張惠普
   tagline: Innovator
   avatar: hp_profile.png #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
@@ -25,10 +25,10 @@ sidebar:
   gitlab: null
   bitbucket: null
   bluesky: null
-  twitter: hpchang
+  twitter: hpc_techbar
   stack-overflow: null
   codewars: null
-  goodreads: hpchang
+  goodreads: null
   mastodon: null
   hackerrank: null
   leetcode: null
@@ -46,11 +46,11 @@ sidebar:
   interests:
     title: Interests
     info:
-    - item: Running
+    - item: Sprinter
       link: null
-    - item: null
+    - item: Bookworm
       link: null
-    - item: null
+    - item: Handyman
       link: null
 
 career-profile:
@@ -81,7 +81,7 @@ experiences:
     company: 開必拓數據 Kapito Inc, Taiwan
     details: | # 確保使用 | 且內容正確縮排
        Provided fast and stable AI inspection solution
-  - role: Sr. Firmware Engineer for Touch&Display driver integration(TDDI)
+  - role: Sr. Firmware Engineer <sub>for Touch&Display driver integration(TDDI)</sub>
     time: May 2014 - Jun 2018
     company: Synaptics, Taiwan
     details: | # 確保使用 | 且內容正確縮排
@@ -161,5 +161,5 @@ skills:
   - name: Chip bring up & Automated CI regression
     level: 85%
     
-footer: 'Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com"
+footer: 'Designed with <i class="fal fa-heart"></i> by <a href="http://themes.3rdwavemedia.com"
   target="_blank" rel="nofollow">Xiaoying Riley</a>'
