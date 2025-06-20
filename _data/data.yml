@@ -42,6 +42,7 @@ sidebar:
       level: Professional
     - idiom: null
       level: null
+      
   interests:
     title: Interests
     info:
@@ -51,63 +52,70 @@ sidebar:
       link: null
     - item: null
       link: null
+
 career-profile:
   title: Career Profile
   summary: |
-    "Over a decade's experience in firmware development and its mobile applications\
-    \ of human interface. \nConstructed 1st touch and display driver integration (TDDI)\
-    \ solution and prototyped smallest optical \nimage stabilization (O.I.S) camera\
-    \ for smartphone. Proven track record of superior on-site ODM support \nover 30%\
-    \ of the DSC market, shipping into almost every camera brand.\n"
+    Over a decade's experience in firmware development and its mobile applications of human interface. 
+    Constructed 1st touch and display driver integration (TDDI) solution and prototyped smallest optical 
+    image stabilization (O.I.S) camera for smartphone. Proven track record of superior on-site ODM support 
+    over 30% of the DSC market, shipping into almost every camera brand.
+
 education:
   title: Education
   info:
   - degree: MSc in Opto-Mechatronics Engineering
     university: National Central University
     time: 2005 - 2007
-    details: null
-  - degree: BSc in Mechanical Engineering
+    details: null # 如果沒有內容，建議使用 null
+  - degree: BSc in Mechanical Engineering # <-- 修正縮排
     university: National Central University
     time: 2001 - 2005
-    details: null
+    details: null # 如果沒有內容，建議使用 null
+
 experiences:
   title: Experiences
   info:
   - role: Director of Industrial Solutions
     time: Jul 2018 - Present
     company: 開必拓數據 Kapito Inc, Taiwan
-    details: Provided fast and stable AI inspection solution<br>
+    details: | # 確保使用 | 且內容正確縮排
+       Provided fast and stable AI inspection solution
   - role: Sr. Firmware Engineer for Touch&Display driver integration(TDDI)
     time: May 2014 - Jun 2018
     company: Synaptics, Taiwan
-    details: Worked on developing TDDI from 0 to 100Mu shipments in 3yrs with exceptional
-    cross-geography teamwork<br>&minus; Led 1st TDDI XL display ASIC to MP with A0
-    silicon for 9 customers.<br>&minus; Led 1st TDDI Gen2 ASIC to MP, 3 months ahead
-    of original target.<br>&minus; Constructed TDDI Gen1 for world's first TDDI single-chip
-    solution.<br>&minus; Implemented an auto-notify FW build validation of continuous
-    integration(CI). Focused on cloud-based automated regression testing
+    details: | # 確保使用 | 且內容正確縮排
+      Worked on developing TDDI from 0 to 100Mu shipments in 3yrs with exceptional
+      cross-geography teamwork. 
+      - Led 1st TDDI XL display ASIC to MP with A0 silicon for 9 customers.
+      - Led 1st TDDI Gen2 ASIC to MP, 3 months ahead of original target.
+      - Constructed TDDI Gen1 for world's first TDDI single-chip solution.
+      - Implemented an auto-notify FW build validation of continuous integration(CI). Focused on cloud-based automated regression testing.
   - role: Firmware Engineer <sub>for digital still camera soc</sub>
     time: Nov 2010 - Mar 2014
     company: CSR Plc. (via acquisition of Zoran Corporation), Taiwan
-    details: Led and supported in 10+ ODM projects from design-in to massproduction,
-    accounting for millions of shipped cameras. And brought up SOCs drivers (CMOS
-    sensor, LCD, Audio Codec...) connecting through common interface (LVDS, I2C, SPI,
-    UART...) and debugging and developing features in image signal processing pipeline&software
-    flow.<br>
+    details: | # 確保使用 | 且內容正確縮排
+      Led and supported in 10+ ODM projects from design-in to massproduction,
+      accounting for millions of shipped cameras. And brought up SOCs drivers (CMOS
+      sensor, LCD, Audio Codec...) connecting through common interface (LVDS, I2C, SPI,
+      UART...) and debugging and developing features in image signal processing pipeline&software
+      flow.
   - role: Control System Leader <sub>for mobile phoen camera actuator</sub>
     time: Feb 2009 - Nov 2010
     company: TDK Corporation, Taiwan
-    details: In one year, built the smallest 2-axes anti-shake O.I.S system for mobile
-    phone camera in collaboration with Japanese engineering colleagues, and implemented
-    camera module system with H.264 video recording in WinCE platform.
+    details: | # 確保使用 | 且內容正確縮排
+      In one year, built the smallest 2-axes anti-shake O.I.S system for mobile
+      phone camera in collaboration with Japanese engineering colleagues, and implemented
+      camera module system with H.264 video recording in WinCE platform.
+
 certifications:
   title: Certifications
   list:
   - name: Synaptics Awards 2017
     start: 2017
-    end: null
+    end: null # 建議明確設定為 null 而非空
     organization: Synaptics
-    credentialid: null
+    credentialid: null # 建議明確設定為 null 而非空
     credentialurl: https://www.synaptics.com/
     credentialname: Synaptics
     details: |
@@ -115,9 +123,9 @@ certifications:
 
   - name: Synaptics Awards 2016
     start: 2016
-    end: null
+    end: null # 建議明確設定為 null 而非空
     organization: Synaptics
-    credentialid: null
+    credentialid: null # 建議明確設定為 null 而非空
     credentialurl: https://www.synaptics.com/
     credentialname: Synaptics
     details: |
@@ -125,7 +133,7 @@ certifications:
 
 publications:
   title: Publications
-  intro: null
+  intro: null # 建議明確設定為 null 而非空
   papers:
   - title: 'Digital programmable load measurement device'
     link: 'https://www.google.com/patents/US20130054155'
@@ -136,27 +144,22 @@ publications:
     link: 'https://hdl.handle.net/11296/qu699m'
     authors: HP CHANG
     conference: 2007
-skills:
-  title: Skills &amp; Proficiency
 
-  toolset:
+skills:
+  title: Skills &amp; Proficiency # <-- 確保有這個
+  toolset: # <-- 確保有這個，且其下的項目正確縮排
   - name: Embedded RTOS
     level: 98%
-
   - name: C/C++, python, Matlab
     level: 95%
-
   - name: Touch screen algorithm
     level: 95%
-
   - name: Peripheral driver, HW/AFE
     level: 90%
-
   - name: GNU gcc, make
     level: 85%
-
   - name: Chip bring up & Automated CI regression
     level: 85%
     
 footer: 'Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com"
-  target="_blank" rel="nofollow">Xiaoying Riley</a>
+  target="_blank" rel="nofollow">Xiaoying Riley</a>'
