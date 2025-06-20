@@ -46,11 +46,11 @@ sidebar:
   interests:
     title: Interests
     info:
+    - item: Handyman
+      link: null
     - item: Sprinter
       link: null
     - item: Bookworm
-      link: null
-    - item: Handyman
       link: null
 
 career-profile:
@@ -77,31 +77,31 @@ experiences:
   title: Experiences
   info:
   - role: Director of Industrial Solutions
-    time: Jul 2018 - Present
+    time: 2018 - Present
     company: 開必拓數據 Kapito Inc, Taiwan
     details: | # 確保使用 | 且內容正確縮排
        Provided fast and stable AI inspection solution
-  - role: Sr. Firmware Engineer <sub>for Touch&Display driver integration(TDDI)</sub>
-    time: May 2014 - Jun 2018
+  - role: Sr. Firmware Engineer <sub>for TDDI SoC</sub>
+    time: 2014 - 2018
     company: Synaptics, Taiwan
     details: | # 確保使用 | 且內容正確縮排
-      Worked on developing TDDI from 0 to 100Mu shipments in 3yrs with exceptional
+      Worked on developing Touch&Display driver integration(TDDI) from 0 to 100Mu shipments in 3yrs with exceptional
       cross-geography teamwork. 
       - Led 1st TDDI XL display ASIC to MP with A0 silicon for 9 customers.
       - Led 1st TDDI Gen2 ASIC to MP, 3 months ahead of original target.
       - Constructed TDDI Gen1 for world's first TDDI single-chip solution.
       - Implemented an auto-notify FW build validation of continuous integration(CI). Focused on cloud-based automated regression testing.
-  - role: Firmware Engineer <sub>for digital still camera soc</sub>
-    time: Nov 2010 - Mar 2014
+  - role: Firmware Engineer <sub>for camera SoC</sub>
+    time: 2010 - 2014
     company: CSR Plc. (via acquisition of Zoran Corporation), Taiwan
     details: | # 確保使用 | 且內容正確縮排
       Led and supported in 10+ ODM projects from design-in to massproduction,
-      accounting for millions of shipped cameras. And brought up SOCs drivers (CMOS
+      accounting for millions of shipped cameras. And brought up SoCs drivers (CMOS
       sensor, LCD, Audio Codec...) connecting through common interface (LVDS, I2C, SPI,
       UART...) and debugging and developing features in image signal processing pipeline&software
       flow.
-  - role: Control System Leader <sub>for mobile phoen camera actuator</sub>
-    time: Feb 2009 - Nov 2010
+  - role: Control System Leader <sub>for O.I.S actuator</sub>
+    time: 2009 - 2010
     company: TDK Corporation, Taiwan
     details: | # 確保使用 | 且內容正確縮排
       In one year, built the smallest 2-axes anti-shake O.I.S system for mobile
@@ -114,7 +114,7 @@ certifications:
   - name: Synaptics Awards 2017
     start: 2017
     end: null # 建議明確設定為 null 而非空
-    organization: Synaptics
+    organization: Smart Display Division
     credentialid: null # 建議明確設定為 null 而非空
     credentialurl: https://www.synaptics.com/
     credentialname: Synaptics
@@ -124,7 +124,7 @@ certifications:
   - name: Synaptics Awards 2016
     start: 2016
     end: null # 建議明確設定為 null 而非空
-    organization: Synaptics
+    organization: Smart Display Division
     credentialid: null # 建議明確設定為 null 而非空
     credentialurl: https://www.synaptics.com/
     credentialname: Synaptics
