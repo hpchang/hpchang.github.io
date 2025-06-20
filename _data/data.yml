@@ -53,7 +53,8 @@ sidebar:
       link: null
 career-profile:
   title: Career Profile
-  summary: "Over a decade's experience in firmware development and its mobile applications\
+  summary: |
+    "Over a decade's experience in firmware development and its mobile applications\
     \ of human interface. \nConstructed 1st touch and display driver integration (TDDI)\
     \ solution and prototyped smallest optical \nimage stabilization (O.I.S) camera\
     \ for smartphone. Proven track record of superior on-site ODM support \nover 30%\
@@ -64,19 +65,11 @@ education:
   - degree: MSc in Opto-Mechatronics Engineering
     university: National Central University
     time: 2005 - 2007
-    details: "Describe your study here lorem ipsum dolor sit amet, consectetuer\n\
-      adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum\nsociis\
-      \ natoque penatibus et magnis dis parturient montes, nascetur\nridiculus mus.\
-      \ Donec quam felis, ultricies nec, pellentesque eu,\npretium quis, sem.\n  -\
-      \ Bullet point\n  - Bullet point\n"
-  - degree: BSc in Mechanical Engineering
+    details: null
+ - degree: BSc in Mechanical Engineering
     university: National Central University
     time: 2001 - 2005
-    details: "Describe your study here lorem ipsum dolor sit amet, consectetuer\n\
-      adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum\nsociis\
-      \ natoque penatibus et magnis dis parturient montes, nascetur\nridiculus mus.\
-      \ Donec quam felis, ultricies nec, pellentesque eu,\npretium quis, sem.\n  -\
-      \ Bullet point\n  - Bullet point\n"
+    details: null
 experiences:
   title: Experiences
   info:
@@ -112,7 +105,7 @@ certifications:
   list:
   - name: Synaptics Awards 2017
     start: 2017
-    end: 2018
+    end: null
     organization: Synaptics
     credentialid: null
     credentialurl: https://www.synaptics.com/
@@ -122,7 +115,7 @@ certifications:
 
   - name: Synaptics Awards 2016
     start: 2016
-    end: 2017
+    end: null
     organization: Synaptics
     credentialid: null
     credentialurl: https://www.synaptics.com/
@@ -145,16 +138,16 @@ publications:
     conference: 2007
 skills:
 - title: Embedded RTOS
-  level: '90'
+  level: 98%
 - title: C/C++, python, Matlab
-  level: '95'
+  level: 95%
 - title: Touch screen algorithm
-  level: '95'
+  level: 95%
 - title: Peripheral driver, HW/AFE
-  level: '90'
+  level: 90%
 - title: GNU gcc, make
-  level: '85'
+  level: 85%
 - title: Chip bring up & Automated CI regression
-  level: '85'
+  level: 85%
 footer: 'Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com"
   target="_blank" rel="nofollow">Xiaoying Riley</a>
