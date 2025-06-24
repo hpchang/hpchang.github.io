@@ -1,232 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic' rel='stylesheet' type='text/css'>
-
-    <link rel="stylesheet" type="text/css" href="http://www.hpchang.com/theme/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="http://www.hpchang.com/theme/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="http://www.hpchang.com/theme/css/main-6.css" />
+---
+layout: default
+---
 
 
-    <link href="http://www.hpchang.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="HP Chang Atom">
+{% include career-profile.html %}
 
+{% unless site.data.data.sidebar.education %}
+  {% include education.html %}
+{% endunless %}
 
-    <link rel="shortcut icon" href="/theme/images/favicon.jpg" type="image/x-icon">
-    <link rel="icon" href="/theme/images/favicon.jpg" type="image/x-icon">
+{% include experiences.html %}
 
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="HandheldFriendly" content="True" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="robots" content="" />
+{% include certifications.html %}
 
+{% include projects.html %}
 
-    <meta name="author" content="HP Chang" />
-    <meta name="description" content="" />
-    <title>HP Chang</title>
+{% include oss-contributions.html %}
 
-</head>
+{% include publications.html %}
 
-<body id="index" class="home">
+{% include recommendations.html %}
 
-<div class="wrapper">
-<!-- Use icons from fontawesome when you are adding new item in the contact list  -->             
- 
-<div class="sidebar-wrapper">
-    <div class="profile-container">
-        <img class="profile-img" src="http://www.hpchang.com/theme/images/hp_profile.png" alt="profile picture" />
-        <h1 class="name">HP Chang 張惠普</h1>
-        <h3 class="tagline">Happy hacking!</h3>
-    </div><!--//profile-container-->
-    
-    <div class="contact-container container-block">
-        <ul class="list-unstyled contact-list">
-           
-            <li class="website"><i class="fa fa-google"></i><a href="http://blog.hpchang.com" target="_blank">blog.hpchang.com</a></li>
-
-            <li class="facebook"><i class="fa fa-facebook-square"></i><a href="https://www.facebook.com/hpchangconsole" target="_blank">hpchangconsole</a></li>
-
-            <li class="twitter"><i class="fa fa-twitter"></i><a href="https://twitter.com/@hpc_techbar" target="_blank">@hpc_techbar</a></li>
-
-	    <li class="instagram"><i class="fa fa-instagram"></i><a href="https://www.instagram.com/taiwan.go" target="_blank">taiwan.go</a></li>
-
-            <li class="linkedin"><i class="fa fa-linkedin"></i><a href="https://in.linkedin.com/in/hpchang" target="_blank">hpchang</a></li>
-
-            <li class="github"><i class="fa fa-github"></i><a href="http://github.com/hpchang" target="_blank">github.com/hpchang</a></li>
-           
-            <li class="email"><i class="fa fa-envelope"></i><a href="mailto: contact@hpchang.com">contact@hpchang.com</a></li>
-	    
-        </ul>
-    </div><!--//contact-container-->
-<div class="education-container container-block">
-<h2 class="container-block-title">Education</h2>
-    <div class="item">
-	    <h4 class="degree">M.S. Opto-Mechatronics Engineering</h4>
-	    <h5 class="meta">National Central University</h5>
-	    <div class="time">2005 - 2007</div>
-	</div><!--//item-->
-    <div class="item">
-	    <h4 class="degree">B.S. Mechanical Engineering</h4>
-	    <h5 class="meta">National Central University</h5>
-	    <div class="time">2001 - 2004</div>
-	</div><!--//item-->
-</div><!--//education-container-->
-<div class="languages-container container-block">
-	<h2 class="container-block-title">Languages</h2>
-	<ul class="list-unstyled interests-list">
-		<li>Mandarin <span class="lang-desc">(Native)</span></li>
-		<li>English <span class="lang-desc">(Professional)</span></li>
-	</ul>
-</div><!--//interests-->
-<div class="interests-container container-block">
-	<h2 class="container-block-title">Interests</h2>
-	<ul class="list-unstyled interests-list">
-		   <li>Reading</li>
-		   <li>Running</li>
-		   <li>Travel</li>
-	</ul>
-</div><!--//interests-->
-
-</div><!--//sidebar-wrapper-->    <div class="main-wrapper">
-       
-<section class="section summary-section">
-<h2 class="section-title"><i class="fa fa-user"></i>Career Profile</h2>
-<div class="summary">
-    <p>Over a decade's experience in firmware development and its mobile applications of human interface. Constructed 1st touch and display driver integration (TDDI) solution and prototyped smallest optical image stabilization (O.I.S) camera for smartphone. Proven track record of superior on-site ODM support over 30% of the DSC market, shipping into almost every camera brand.</p>
-</div><!--//summary-->
-</section><!--//section-->
-                    
-<section class="section experiences-section">
-    <h2 class="section-title"><i class="fa fa-briefcase"></i>Experiences</h2>
-        <div class="item">
-            <div class="meta">
-                <div class="upper-row">
-                    <h3 class="job-title">Team Lead <sub>for industrial AI inspection solutions</sub></h3>
-                    <div class="time">Jul 2018 - Present</div>
-                </div><!--//upper-row-->
-                <div class="company">開必拓數據 Kapito Inc, Taiwan</div>
-            </div><!--//meta-->
-            <div class="details">
-                <p>Provided fast and stable AI inspection solution<br></p>
-            </div><!--//details-->
-        </div><!--//item-->
-        <div class="item">
-            <div class="meta">
-                <div class="upper-row">
-                    <h3 class="job-title">Sr. Firmware Engineer <sub>for Touch&Display driver integration(TDDI)</sub></h3>
-                    <div class="time">May 2014 - Jun 2018</div>
-                </div><!--//upper-row-->
-                <div class="company">Synaptics, Taiwan</div>
-            </div><!--//meta-->
-            <div class="details">
-                <p>Worked on developing TDDI from 0 to 100Mu shipments in 3yrs with exceptional cross-geography teamwork<br>&minus; Led 1st TDDI XL display ASIC to MP with A0 silicon for 9 customers.<br>&minus; Led 1st TDDI Gen2 ASIC to MP, 3 months ahead of original target.<br>&minus; Constructed TDDI Gen1 for world's first TDDI single-chip solution.<br>&minus; Implemented an auto-notify FW build validation of continuous integration(CI). Focused on cloud-based automated regression testing</p>
-            </div><!--//details-->
-        </div><!--//item-->
-        <div class="item">
-            <div class="meta">
-                <div class="upper-row">
-                    <h3 class="job-title">Firmware Engineer <sub>for digital still camera soc</sub></h3>
-                    <div class="time">Nov 2010 - Mar 2014</div>
-                </div><!--//upper-row-->
-                <div class="company">CSR Plc. (via acquisition of Zoran Corporation), Taiwan</div>
-            </div><!--//meta-->
-            <div class="details">
-                <p>Led and supported in 10+ ODM projects from design-in to massproduction, accounting for millions of shipped cameras. And brought up SOCs drivers (CMOS sensor, LCD, Audio Codec...) connecting through common interface (LVDS, I2C, SPI, UART...) and debugging and developing features in image signal processing pipeline&software flow.<br></p>
-            </div><!--//details-->
-        </div><!--//item-->
-        <div class="item">
-            <div class="meta">
-                <div class="upper-row">
-                    <h3 class="job-title">Control System Leader <sub>for mobile phoen camera actuator</sub></h3>
-                    <div class="time">Feb 2009 - Nov 2010</div>
-                </div><!--//upper-row-->
-                <div class="company">TDK Corporation, Taiwan</div>
-            </div><!--//meta-->
-            <div class="details">
-                <p>In one year, built the smallest 2-axes anti-shake O.I.S system for mobile phone camera in collaboration with Japanese engineering colleagues, and implemented camera module system with H.264 video recording in WinCE platform.</p>
-            </div><!--//details-->
-        </div><!--//item-->
-</section><!--//section-->
-                    
-<section class="section projects-section">
-    <h2 class="section-title"><i class="fa fa-trophy"></i>Recognitions</h2>
-    <div class="intro">
-        <p></p>
-    </div><!--//intro-->
-        <div class="item">
-            <span class="project-title"><a href="#hook">Synaptics Awards 2017</a></span> - <span class="project-tagline">"Exhilarating and Rewarding Environment" for achievement for initial release to MP of tire-one OEM with A0 silicon.</span>
-        </div><!--//item-->
-        <div class="item">
-            <span class="project-title"><a href="#hook">Synaptics Awards 2016</a></span> - <span class="project-tagline">"Innovation to Win" for overcoming a tremendous deal of challenges throughout silicon development w/ new fabrication.</span>
-        </div><!--//item-->
-        <div class="item">
-            <span class="project-title"><a href="#hook">US Patents</a></span> - <span class="project-tagline"><a href="https://www.google.com/patents/US20130054155" target="_blank" title="Digital programmable load measurement device (2011)">Digital programmable load measurement device (2011)</a></span>
-        </div><!--//item-->
-        <div class="item">
-            <span class="project-title"><a href="#hook">Thesis</a></span> - <span class="project-tagline"><a href="https://goo.gl/5DQAuA" target="_blank" title="A new on-line battery state-of-charge estimation and monitoring system (2007)">A new on-line battery state-of-charge estimation and monitoring system (2007)</a></span>
-        </div><!--//item-->
-</section><!--//section-->
-                    
-<section class="skills-section section">
-    <h2 class="section-title"><i class="fa fa-rocket"></i>Skills &amp; Proficiency</h2>
-    <div class="skillset">        
-            <div class="item">
-                <h3 class="level-title">Embedded RTOS</h3>
-                <div class="level-bar">
-                    <div class="level-bar-inner" data-level="90%">
-                    </div>                                      
-                </div><!--//level-bar-->                                 
-            </div><!--//item-->
-            <div class="item">
-                <h3 class="level-title">C/C++, python, Matlab</h3>
-                <div class="level-bar">
-                    <div class="level-bar-inner" data-level="95%">
-                    </div>                                      
-                </div><!--//level-bar-->                                 
-            </div><!--//item-->
-            <div class="item">
-                <h3 class="level-title">Touch screen algorithm</h3>
-                <div class="level-bar">
-                    <div class="level-bar-inner" data-level="95%">
-                    </div>                                      
-                </div><!--//level-bar-->                                 
-            </div><!--//item-->
-            <div class="item">
-                <h3 class="level-title">Peripheral driver, HW/AFE</h3>
-                <div class="level-bar">
-                    <div class="level-bar-inner" data-level="90%">
-                    </div>                                      
-                </div><!--//level-bar-->                                 
-            </div><!--//item-->
-            <div class="item">
-                <h3 class="level-title">GNU gcc, make</h3>
-                <div class="level-bar">
-                    <div class="level-bar-inner" data-level="85%">
-                    </div>                                      
-                </div><!--//level-bar-->                                 
-            </div><!--//item-->
-            <div class="item">
-                <h3 class="level-title">Chip bring up & Automated CI regression</h3>
-                <div class="level-bar">
-                    <div class="level-bar-inner" data-level="85%">
-                    </div>                                      
-                </div><!--//level-bar-->                                 
-            </div><!--//item-->
-    </div>  
-</section><!--//skills-section-->
-        
-    </div><!--//main-body-->
-</div>
-
-    <footer class="footer">
-        <div class="text-center">
-            <small class="copyright">Designed by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a> for developers</small>
-            <br>
-            <small class="copyright">Ported to Pelican by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Suhaib Khan</a> and modified by <a href="https://github.com/hpchang/resume" target="_blank" rel="nofollow">HP Chang</a></small>
-        </div><!--//container-->
-    </footer><!--//footer-->
-    <script type="text/javascript" src="http://www.hpchang.com/theme/js/jquery-1.11.3.min.js"></script>
-    <script type="text/javascript" src="http://www.hpchang.com/theme/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="http://www.hpchang.com/theme/js/main.js"></script>
-</body>
-</html>
+{% include skills.html %}

@@ -1,0 +1,163 @@
+#
+# Be aware that even a small syntax error here can lead to failures in output.
+#
+
+sidebar:
+  position: right # position of the sidebar : left or right
+  about: False # set to False or comment line if you want to remove the "how to use?" in the sidebar
+  education: True # set to False if you want education in main section instead of in sidebar
+
+  # Profile information
+  name: HP Chang 張惠普
+  tagline: Innovator
+  avatar: hp_profile.png #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
+
+  # Sidebar links
+  email: hp@hpchang.com
+  phone: null
+  timezone: null  # Enter your timezone, e.g., America/Havana, Africa/Casablanca, America/North_Dakota/Center
+  citizenship: null
+  website: https://blog.hpchang.com  # Include the full website URL, including "http://" or "https://".
+  linkedin: hpchang
+  xing: null
+  github: hpchang
+  telegram: null
+  gitlab: null
+  bitbucket: null
+  bluesky: null
+  twitter: hpc_techbar
+  stack-overflow: null
+  codewars: null
+  goodreads: null
+  mastodon: null
+  hackerrank: null
+  leetcode: null
+  pdf: null
+  languages:
+    title: Languages
+    info:
+    - idiom: Mandarin
+      level: Native
+    - idiom: English
+      level: Professional
+      
+  interests:
+    title: Interests
+    info:
+    - item: Handyman
+      link: null
+    - item: Sprinter
+      link: null
+    - item: Bookworm
+      link: null
+
+career-profile:
+  title: Career Profile
+  summary: |
+    Over a decade's experience in firmware development and its mobile applications of human interface. 
+    Constructed 1st touch and display driver integration (TDDI) solution and prototyped smallest optical 
+    image stabilization (O.I.S) camera for smartphone. Proven track record of superior on-site ODM support 
+    over 30% of the DSC market, shipping into almost every camera brand.
+
+education:
+  title: Education
+  info:
+  - degree: MSc in Opto-Mechatronics Engineering
+    university: National Central University
+    time: 2005 - 2007
+    details: null # 如果沒有內容，建議使用 null
+  - degree: BSc in Mechanical Engineering # <-- 修正縮排
+    university: National Central University
+    time: 2001 - 2005
+    details: null # 如果沒有內容，建議使用 null
+
+experiences:
+  title: Experiences
+  info:
+  - role: Director of Industrial Solutions
+    time: 2018 - Present
+    company: 開必拓數據 Kapito Inc, Taiwan
+    details: | # 確保使用 | 且內容正確縮排
+       Provided fast and stable AI inspection solution
+  - role: Sr. Firmware Engineer <sub>for TDDI SoC</sub>
+    time: 2014 - 2018
+    company: Synaptics, Taiwan
+    details: | # 確保使用 | 且內容正確縮排
+      Worked on developing Touch&Display driver integration(TDDI) from 0 to 100Mu shipments in 3yrs with exceptional
+      cross-geography teamwork. 
+      - Led 1st TDDI XL display ASIC to MP with A0 silicon for 9 customers.
+      - Led 1st TDDI Gen2 ASIC to MP, 3 months ahead of original target.
+      - Constructed TDDI Gen1 for world's first TDDI single-chip solution.
+      - Implemented an auto-notify FW build validation of continuous integration(CI). Focused on cloud-based automated regression testing.
+  - role: Firmware Engineer <sub>for camera SoC</sub>
+    time: 2010 - 2014
+    company: CSR Plc. (via acquisition of Zoran Corporation), Taiwan
+    details: | # 確保使用 | 且內容正確縮排
+      Led and supported in 10+ ODM projects from design-in to massproduction,
+      accounting for millions of shipped cameras. And brought up SoCs drivers (CMOS
+      sensor, LCD, Audio Codec...) connecting through common interface (LVDS, I2C, SPI,
+      UART...) and debugging and developing features in image signal processing pipeline&software
+      flow.
+  - role: Control System Leader <sub>for O.I.S actuator</sub>
+    time: 2009 - 2010
+    company: TDK Corporation, Taiwan
+    details: | # 確保使用 | 且內容正確縮排
+      In one year, built the smallest 2-axes anti-shake O.I.S system for mobile
+      phone camera in collaboration with Japanese engineering colleagues, and implemented
+      camera module system with H.264 video recording in WinCE platform.
+
+certifications:
+  title: Certifications
+  list:
+  - name: Synaptics Awards 2017
+    start: 2017
+    end: null # 建議明確設定為 null 而非空
+    organization: Smart Display Division
+    credentialid: null # 建議明確設定為 null 而非空
+    credentialurl: https://www.synaptics.com/
+    credentialname: Synaptics
+    details: |
+      "Exhilarating and Rewarding Environment" for achievement for initial release to MP of tire-one OEM with A0 silicon.
+
+  - name: Synaptics Awards 2016
+    start: 2016
+    end: null # 建議明確設定為 null 而非空
+    organization: Smart Display Division
+    credentialid: null # 建議明確設定為 null 而非空
+    credentialurl: https://www.synaptics.com/
+    credentialname: Synaptics
+    details: |
+      "Innovation to Win" for overcoming a tremendous deal of challenges throughout silicon development w/ new fabrication.
+
+publications:
+  title: Publications
+  intro: null # 建議明確設定為 null 而非空
+  papers:
+  - title: 'Digital programmable load measurement device'
+    link: 'https://www.google.com/patents/US20130054155'
+    authors: Shyh-Biau Jiang, HP CHANG
+    conference: 2011
+  - title: 'A new on-line battery
+    state-of-charge estimation and monitoring system'
+    link: 'https://hdl.handle.net/11296/qu699m'
+    authors: HP CHANG
+    conference: 2007
+
+skills:
+  title: Skills &amp; Proficiency # <-- 確保有這個
+  toolset: # <-- 確保有這個，且其下的項目正確縮排
+  - name: Embedded RTOS
+    level: 98%
+  - name: C/C++, python, Matlab
+    level: 95%
+  - name: Touch screen algorithm
+    level: 95%
+  - name: Peripheral driver, HW/AFE
+    level: 90%
+  - name: GNU gcc, make
+    level: 85%
+  - name: Chip bring up & Automated CI regression
+    level: 85%
+    
+footer: 'Designed by <a href="http://themes.3rdwavemedia.com"
+  target="_blank" rel="nofollow">Xiaoying Riley</a>'
