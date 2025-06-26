@@ -13,7 +13,7 @@ sidebar:
   avatar: hp_profile.png #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
   # Sidebar links
-  email: hp@hpchang.com
+  email: contact@hpchang.com
   phone: null
   timezone: null  # Enter your timezone, e.g., America/Havana, Africa/Casablanca, America/North_Dakota/Center
   citizenship: null
