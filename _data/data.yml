@@ -13,7 +13,7 @@ sidebar:
   avatar: hp_profile.png #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
   # Sidebar links
-  email: contact@hpchang.com
+  email: hp@hpchang.com
   phone: null
   timezone: null  # Enter your timezone, e.g., America/Havana, Africa/Casablanca, America/North_Dakota/Center
   citizenship: null
@@ -54,10 +54,11 @@ sidebar:
 career-profile:
   title: Career Profile
   summary: |
-    Over a decade's experience in firmware development and its mobile applications of human interface. 
-    Constructed 1st touch and display driver integration (TDDI) solution and prototyped smallest optical 
-    image stabilization (O.I.S) camera for smartphone. Proven track record of superior on-site ODM support 
-    over 30% of the DSC market, shipping into almost every camera brand.
+    Highly experienced Firmware Engineer with over a decade of expertise in firmware development and 
+    mobile human interface applications. Pioneered the world's first Touch and Display Driver Integration (TDDI) 
+    solution and prototyped the smallest optical image stabilization (O.I.S.) camera for smartphones. 
+    Consistently delivered superior on-site ODM support, contributing to over 30% of the DSC market share and 
+    successfully shipping to nearly every major camera brand.
 
 education:
   title: Education
@@ -78,7 +79,7 @@ experiences:
     time: 2018 - Present
     company: 開必拓數據 Kapito Inc, Taiwan
     details: | # 確保使用 | 且內容正確縮排
-       Provided fast and stable AI inspection solution
+       Provided fast and stable AI inspection solution <a href="https://fastable.ai" style="color: #0074d9;">fastable.ai</a>
   - role: Sr. Firmware Engineer <sub>for TDDI SoC</sub>
     time: 2014 - 2018
     company: Synaptics, Taiwan
@@ -107,9 +108,9 @@ experiences:
       camera module system with H.264 video recording in WinCE platform.
 
 certifications:
-  title: Certifications
+  title: Recognitions
   list:
-  - name: Synaptics Awards 2017
+  - name: Synaptics Awards
     start: 2017
     end: null # 建議明確設定為 null 而非空
     organization: Smart Display Division
@@ -119,7 +120,7 @@ certifications:
     details: |
       "Exhilarating and Rewarding Environment" for achievement for initial release to MP of tire-one OEM with A0 silicon.
 
-  - name: Synaptics Awards 2016
+  - name: Innovation to Win Awards
     start: 2016
     end: null # 建議明確設定為 null 而非空
     organization: Smart Display Division
@@ -127,21 +128,30 @@ certifications:
     credentialurl: https://www.synaptics.com/
     credentialname: Synaptics
     details: |
-      "Innovation to Win" for overcoming a tremendous deal of challenges throughout silicon development w/ new fabrication.
+      The award for overcoming a tremendous deal of challenges throughout silicon development w/ new fabrication.
 
 publications:
   title: Publications
   intro: null # 建議明確設定為 null 而非空
   papers:
-  - title: 'Digital programmable load measurement device'
+  - title: '箔状物の表面検査システム, 2025'
+    link: 'https://patents.google.com/patent/JP2025009632A'
+    authors: 孫逢佐, 葉怡婷, 孫逢佑, 陳廷清, 張惠普...
+  - title: '箔状物の表面検査システム, 2024'
+    link: 'https://patents.google.com/patent/JP2023081848A'
+    authors: 孫逢佐, 葉怡婷, 孫逢佑, 洪祥恩, 周博翰, 張惠普, 陳允毅...
+  - title: 'Motor controlling system for application in apparatus having roll-to-roll mechanism, 2023'
+    link: 'https://patents.google.com/patent/US20230061439A1'
+    authors: Feng-Tso Sun, Yi-Ting Yeh, Feng-Yu Sun, Po-Han Chou, Yun-Yi Chen, Hui-Pu CHANG...
+  - title: 'System and method for sorting moving objects, 2021'
+    link: 'https://patents.google.com/patent/US20210024297A1'
+    authors: Feng-Tso Sun, Yi-Ting Yeh, Feng-Yu Sun, Hui-Pu CHANG...
+  - title: 'Digital programmable load measurement device, 2011'
     link: 'https://www.google.com/patents/US20130054155'
     authors: Shyh-Biau Jiang, HP CHANG
-    conference: 2011
-  - title: 'A new on-line battery
-    state-of-charge estimation and monitoring system'
+  - title: 'A new on-line battery state-of-charge estimation and monitoring system, 2007'
     link: 'https://hdl.handle.net/11296/qu699m'
     authors: HP CHANG
-    conference: 2007
 
 skills:
   title: Skills &amp; Proficiency # <-- 確保有這個
